@@ -1,0 +1,242 @@
+@import url(http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css);
+
+/*Global Modification*/
+.egc-container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+	font-size : 16px;
+}
+
+a, h1, h2, h3, h4, h5 {
+	font-family : 'Gill Sans', 'Gill Sans MT', "Helvetica Neue", 'Helvetica', 'Arial',
+	 sans-serif;
+	color : rgb(0, 0, 0);
+}
+
+p {
+	 font-family : 'Perpetua', 
+	 serif;
+}
+
+a,
+a:hover {
+	font-size: 100%;
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+
+/*Navigation*/
+
+.nav a {
+	font-weight: lighter;
+	font-size: 140%;
+}
+
+.nav > li > a {
+	padding: 10px 10px;
+}
+
+.nav > li > a:hover {
+	color: white;
+	background: none;
+}
+
+header {
+	background-color: rgba(90, 166, 12, 1);
+}
+
+.header-wrapper {
+	padding: 45px 5px 5px 10px;
+	max-height: 120px;
+	width: 95%;
+	margin: 0 auto;
+}
+
+.brand a{
+	font-size: 230%;
+	line-height: 35px;
+}
+
+
+/*Intro*/
+
+.intro {
+	height: 470px;
+	background-image: url(../img/EGC-Intro.jpg);
+	background-position: 50% 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.intro-title {
+	padding-top: 100px;
+	text-align: center;
+}
+
+.intro-title h2 {
+	font-size: 500%;
+	font-weight: lighter;
+}
+
+
+/*Upcoming Events*/
+
+.upcoming-event {
+	margin-bottom: 60px;
+}
+
+.name, 
+.details, 
+.upcoming-event .section-label {
+	text-align: center;
+}
+
+.upcoming-event .section-label {
+	color: rgb(60, 114, 4);
+	font-size: 250%;
+}
+
+.property,
+.value {
+	/*font-family : 'Perpetua';*/
+	margin-bottom: 0px;
+	margin-top: 5px;
+}
+
+.property {
+	text-align: right;
+}
+
+.value {
+	text-align: left;
+}
+
+/*.upcoming-event h3,
+.upcoming-event h4, {
+	padding: 0px;
+}*/
+
+.upcoming-event a {
+	color: rgb(60, 114, 4);
+}
+
+.upcoming-event .title {
+	font-size: 250%;
+	font-weight: 600;
+	color: rgb(29, 64, 3);
+	padding-bottom: 0px;
+}
+
+.upcoming-event .subtitle {
+	font-size: 230%;
+	font-style: italic;
+	font-weight: lighter;
+}
+
+.details h5 {
+	font-size: 140%;
+}
+
+
+
+/* Entries */
+
+.entries {
+	padding-top: 10px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.entry {
+
+}
+
+.entry .entry-header h4 {
+	color: rgb(60, 114, 4);
+	font-weight: 600;
+}
+
+.entry .content p {
+	color: rgb(29, 64, 3);
+}
+
+
+/*Footer*/
+
+footer {
+	background-color: rgba(82, 70, 81, 1);
+	padding-top: 10px;
+}
+
+.footer-wrapper {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+footer .entry .entry-header h4 {
+	color: rgb(223, 232, 215);
+	font-weight: 600;
+}
+
+footer .entry .content p {
+	color: rgb(223, 232, 215);
+}
+
+.bottom-bar {
+	background-color: rgba(51, 44, 51, 1);
+	color: rgb(223, 232, 215);
+	text-align: center;
+}
+
+.bottom-bar p {
+	margin-top: 10px;
+}
+
+/*Media Queries*/
+
+
+/*@media (max-width: 1200px) {
+	.brand a {
+		font-size: 310%;
+	}
+}
+
+@media (max-width: 992px) {
+
+	.brand {
+		padding-top: 3px;
+	}
+
+	.brand a {
+		font-size: 210%;
+	}
+
+	.header-wrapper {
+		padding: 25px 5px 5px 10px;
+	}
+	}*/
+
+
+
+
+
+
+
+/*Utility*/
+
+.newsletter {
+
+}
+
+.green-seperator {
+	border-top: 1px solid #8EC260;
+	margin-top: 25px;
+	margin-bottom: 15px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
