@@ -212,13 +212,22 @@ footer .entry .content p {
 }
 
 @media (max-width: 767px) {
-    
+    .intro-title h2 {
+    	font-size: 300%;
+    }
+
+	.upcoming-event .title {
+		font-size: 230%;
+	}
+
+	.upcoming-event .subtitle {
+		font-size: 180%;
+	}
+
+	.details h5 {
+		font-size: 110%;
+	}
 }
-
-
-
-
-
 
 
 /*Utility*/
