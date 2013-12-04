@@ -1,0 +1,7 @@
+$(function() {
+	renderNews();
+});
+
+function renderNews() {
+	
+}

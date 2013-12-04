@@ -67,12 +67,16 @@ header {
 
 /*Intro*/
 
-.intro {
+.intro, .news-intro {
 	height: 470px;
 	background-image: url(../img/EGC-Intro.jpg);
 	background-position: 50% 0;
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+.news-intro {
+	height: 200px;
 }
 
 .intro-title {
@@ -88,7 +92,7 @@ header {
 
 /*Upcoming Events*/
 
-.upcoming-event {
+.upcoming-event .news {
 	margin-bottom: 60px;
 }
 
@@ -98,7 +102,8 @@ header {
 	text-align: center;
 }
 
-.upcoming-event .section-label {
+.upcoming-event .section-label,
+.news .section-label {
 	color: rgb(60, 114, 4);
 	font-size: 250%;
 }
