@@ -77,6 +77,13 @@ header {
 	background-repeat: no-repeat;
 }
 
+.about-intro {
+	height: 400px;
+	background-position: 50% 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(../img/concert.jpg);
+}
 
 .event-intro {
 	height: 200px;
@@ -169,6 +176,30 @@ header {
 	padding-top: 10px;
 	margin-left: 15px;
 	margin-right: 15px;
+}
+
+.event-back {
+	margin:0px 0px 0px 0px;
+	background-position: 50% 0;
+	background-size: cover;
+	background-image: url(../img/witewall_3.png);
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px #777;
+	margin-bottom: 5px;
+}
+
+.event-title {
+	padding-top: 20px;
+}
+
+.about-border {
+	border-left: solid 5px;
+	line-height: 20px;
+	padding-left: 5px; 
+}
+
+.about-footer {
+	color: rgb(223, 232, 215);
 }
 
 .entry {
