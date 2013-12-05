@@ -1,5 +1,3 @@
-/* reset stylesheet to reset browser defaults back to 0 */
-
 @import url(http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic|Bitter:400);
 
@@ -185,12 +183,18 @@ header {
 	padding: 15px;
 }
 
-.news-entry {
-	padding-top: 5px;
-}
-
 .news-template {
 	display: none;
+}
+
+.date {
+	font-style: italic;
+}
+
+.title {
+	font-weight: bold;
+	text-align: center;
+	font-size: 125%;
 }
 
 /*Footer*/
@@ -274,9 +278,6 @@ footer .entry .content p {
 
 
 .column-container {
-	margin-right: auto;
-	margin-left: auto;
-	width: 70%;
 }
 
 .contact-container {
@@ -304,24 +305,37 @@ div.img {
 	padding: 6px; 
 }
 
+.left-column div.img {
+	float: right;
+	padding-right: 0px;
+}
+
+.col-md-6 {
+	padding-right:6px;
+	padding-left:6px;
+}
+
+.right-column div.img {
+	float: left;
+	padding-left: 0px;
+}
+
 div.img:hover {
 	color: #FFF;
 	opacity: .6; 
 }
 
-/*.left-column {
-	width: 454px;
-	float: left;
-}
-
-.right-column {
-	margin-left: 454px;
-}*/
-
 .clear {
 	clear: both;
 }
 
+.pagination-centered {
+	text-align: center;
+}
+
+.current {
+	color: #8EC260;
+}
 
 
 /* Contact Us */
@@ -346,4 +360,13 @@ div.img:hover {
 
 .listen a, .watch a {
 	float: right;
+}
+
+.song-title {
+	font-size: 110%;
+}
+
+.song-artist {
+	font-size: 90%;
+	font-style: italic;
 }
