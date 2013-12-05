@@ -1,4 +1,6 @@
 @import url(http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic|Bitter:400);
+
 
 /*Global Modification*/
 .egc-container {
@@ -13,13 +15,13 @@ body {
 }
 
 a, h1, h2, h3, h4, h5 {
-	font-family : 'Gill Sans', 'Gill Sans MT', "Helvetica Neue", 'Helvetica', 'Arial',
+	font-family : 'Source Sans Pro', 'Gill Sans', 'Gill Sans MT', "Helvetica Neue", 'Helvetica', 'Arial',
 	 sans-serif;
 	color : rgb(0, 0, 0);
 }
 
 p {
-	 font-family : 'Perpetua', 
+	 font-family : 'Bitter', 'Perpetua', 
 	 serif;
 }
 
@@ -170,6 +172,7 @@ header {
 
 .entry .content p {
 	color: rgb(29, 64, 3);
+	font-size: 75%;
 }
 
 
@@ -202,6 +205,8 @@ footer .entry .content p {
 }
 
 .bottom-bar p {
+	font-family : 'Source Sans Pro', 'Gill Sans', 'Gill Sans MT', "Helvetica Neue", 'Helvetica', 'Arial',
+	 sans-serif;
 	margin-top: 10px;
 }
 
