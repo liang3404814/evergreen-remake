@@ -183,12 +183,18 @@ header {
 	padding: 15px;
 }
 
-.news-entry {
-	padding-top: 5px;
-}
-
 .news-template {
 	display: none;
+}
+
+.date {
+	font-style: italic;
+}
+
+.title {
+	font-weight: bold;
+	text-align: center;
+	font-size: 125%;
 }
 
 /*Footer*/
@@ -354,4 +360,13 @@ div.img:hover {
 
 .listen a, .watch a {
 	float: right;
+}
+
+.song-title {
+	font-size: 110%;
+}
+
+.song-artist {
+	font-size: 90%;
+	font-style: italic;
 }
