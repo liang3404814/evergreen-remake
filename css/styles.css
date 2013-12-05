@@ -1,3 +1,6 @@
+/* reset stylesheet to reset browser defaults back to 0 */
+@import url(reset.css);
+
 @import url(http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css);
 
 /*Global Modification*/
@@ -240,3 +243,75 @@ footer .entry .content p {
 	margin-left: 30px;
 	margin-right: 30px;
 }
+
+.column-container {
+	margin-left:auto;
+	margin-right:auto;
+	width:80%;
+}
+
+.contact-container {
+	margin-left: 30px;
+}
+
+
+
+
+
+/* Gallery page */
+
+.gallery-title {
+	border-top: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 0px;
+	text-align: center;
+}
+
+.gallery-title h4 {
+	font-size: 140%;
+}
+
+div.img {
+	padding: 6px; 
+}
+
+div.img:hover {
+	color: #FFF;
+	opacity: .6; 
+}
+
+.left-column {
+	width: 453px;
+	float: left;
+}
+
+.right-column {
+	margin-left: 453px;
+}
+
+.clear {
+	clear: both;
+}
+
+
+
+/* Contact Us */
+
+.contact-us {
+	color: #A1A1A1;
+	padding-bottom: 20px; 
+}
+
+.address {
+	padding-bottom: 20px;
+}
+
+.mail {
+	padding-top:10px;
+}
+
+
+
+
