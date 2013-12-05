@@ -280,9 +280,6 @@ footer .entry .content p {
 
 
 .column-container {
-	margin-right: auto;
-	margin-left: auto;
-	width: 70%;
 }
 
 .contact-container {
@@ -308,6 +305,21 @@ footer .entry .content p {
 
 div.img {
 	padding: 6px; 
+}
+
+.left-column div.img {
+	float: right;
+	padding-right: 0px;
+}
+
+.col-md-6 {
+	padding-right:6px;
+	padding-left:6px;
+}
+
+.right-column div.img {
+	float: left;
+	padding-left: 0px;
 }
 
 div.img:hover {
