@@ -175,6 +175,21 @@ header {
 	font-size: 75%;
 }
 
+.news-entry, 
+.song-entry {
+	border: 2px solid green;
+	border-radius: 8px;
+	margin: 25px;
+	padding: 15px;
+}
+
+.news-entry {
+	padding-top: 5px;
+}
+
+.news-template {
+	display: none;
+}
 
 /*Footer*/
 
@@ -253,4 +268,10 @@ footer .entry .content p {
 	margin-bottom: 15px;
 	margin-left: 30px;
 	margin-right: 30px;
+}
+
+/*Repertoire*/
+
+.listen a, .watch a {
+	float: right;
 }
