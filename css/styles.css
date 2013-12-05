@@ -259,3 +259,9 @@ footer .entry .content p {
 	margin-left: 30px;
 	margin-right: 30px;
 }
+
+/*Repertoire*/
+
+.listen a, .watch a {
+	text-align: right;
+}
