@@ -1,5 +1,3 @@
-/* reset stylesheet to reset browser defaults back to 0 */
-
 @import url(http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic|Bitter:400);
 
@@ -321,19 +319,17 @@ div.img:hover {
 	opacity: .6; 
 }
 
-/*.left-column {
-	width: 454px;
-	float: left;
-}
-
-.right-column {
-	margin-left: 454px;
-}*/
-
 .clear {
 	clear: both;
 }
 
+.pagination-centered {
+	text-align: center;
+}
+
+.current {
+	color: #8EC260;
+}
 
 
 /* Contact Us */
