@@ -69,12 +69,22 @@ header {
 
 /*Intro*/
 
-.intro, .news-intro {
+.intro, .news-intro, .about-intro, .event-intro {
 	height: 470px;
 	background-image: url(../img/EGC-Intro.jpg);
 	background-position: 50% 0;
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+
+.event-intro {
+	height: 200px;
+}
+
+.event-intro h3 {
+	font-size: 45px;
+	vertical-align: middle;
 }
 
 .news-intro {
