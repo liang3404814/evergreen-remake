@@ -172,11 +172,16 @@ header {
 	color: rgb(29, 64, 3);
 }
 
-.news-entry {
+.news-entry, 
+.song-entry {
 	border: 2px solid green;
 	border-radius: 8px;
 	margin: 25px;
-	padding-left: 10px;
+	padding: 15px;
+}
+
+.news-entry {
+	padding-top: 5px;
 }
 
 .news-template {
@@ -263,5 +268,5 @@ footer .entry .content p {
 /*Repertoire*/
 
 .listen a, .watch a {
-	text-align: right;
+	float: right;
 }
