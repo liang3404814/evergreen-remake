@@ -1,4 +1,5 @@
 /* reset stylesheet to reset browser defaults back to 0 */
+@import url(reset.css);
 
 @import url(http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic|Bitter:400);
@@ -273,16 +274,10 @@ footer .entry .content p {
 }
 
 <<<<<<< HEAD
-
-
-
-
-
-
 .column-container {
-	margin-right: auto;
-	margin-left: auto;
-	width: 70%;
+	margin-left:auto;
+	margin-right:auto;
+	width:80%;
 }
 
 .contact-container {
@@ -317,14 +312,14 @@ div.img:hover {
 	opacity: .6; 
 }
 
-/*.left-column {
-	width: 454px;
+.left-column {
+	width: 453px;
 	float: left;
 }
 
 .right-column {
-	margin-left: 454px;
-}*/
+	margin-left: 453px;
+}
 
 .clear {
 	clear: both;
