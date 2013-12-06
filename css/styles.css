@@ -13,6 +13,8 @@
 .container {
 	padding-top: 10px;
 	padding-bottom: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
 }
 
@@ -294,14 +296,6 @@ header {
 
 
 	}
-
-
-/*Temporary fix for Bootstrap 3 scroll bug, and this 
-is expected to be fixed in 3.1.0.
-*/
-@media (min-width: 768px) {
-	.row { margin-right: 0; margin-left: 0; }
-}
 
 @media (max-width: 767px) {
 	.intro-title h2 {
