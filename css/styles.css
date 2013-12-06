@@ -30,8 +30,8 @@ a, h1, h2, h3, h4, h5 {
 }
 
 p {
-	font-family : 'Bitter', 'Perpetua', 
-	serif;
+	font-family : 'Source Sans Pro', 'Gill Sans', 'Gill Sans MT', "Helvetica Neue", 'Helvetica', 'Arial', 
+	sans-serif;
 }
 
 a,
@@ -63,7 +63,7 @@ header {
 }
 
 .header-wrapper {
-	padding: 30px 0px 30px 0px;
+	padding:  30px 0px 30px 0px;
 	max-height: 120px;
 	width: 95%;
 	margin: 0 auto;
@@ -222,7 +222,7 @@ header {
 
 	.entry .content p {
 		color: rgb(29, 64, 3);
-		font-size: 75%;
+		font-size: 80%;
 	}
 
 	.news-entry, 
