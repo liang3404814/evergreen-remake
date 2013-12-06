@@ -4,14 +4,29 @@
 		<section class="news row">
 			<div class="news-wrapper col-md-10 col-md-offset-1" ng-controller="repertoireListingControl">
 				<h3 class="section-label">Repertoire</h3>
-				<div class='song-entry' ng-repeat="song in repertoire.entries">
-					<span class="song-title">{{song.title}}</span>
-					<span class="listen"><a href="#">Listen</a></span></br>
+				<div class='list-entry row' ng-repeat="song in repertoire.entries">
+					<div class="entry-info col-md-6">
+						<div class=" title entry-title">
+							<h3>{{song.title}}</h3>
+						</div>
+						<div class=" song-description">
+							<p>{{song.description}}</p>
+						</div>
+						
+					</div>
+					<div class="song-media col-md-6">
+						<div class=" song-audio" ng-if="song.audioURL">
+							<audio id="player2" src="{{song.audioURL}}" type="audio/mpeg" controls="controls" mediaelement></audio>
+						</div>
+						<div class=" song-video" ng-if="song.videoURL">
+							
+						</div>
+					</div>
 					
-					<span class="song-description">{{song.description}}</span>
-					<span class="watch"><a href="#">Watch</a></span>
 				</div>
 			</div>
 		</section>
+		
+
 
 		<div class="green-seperator"></div>

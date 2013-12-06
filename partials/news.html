@@ -4,9 +4,9 @@
 		<section class="news row">
 			<div class="news-wrapper col-md-10 col-md-offset-1" ng-controller="newsListingControl">
 				<h3 class="section-label">News</h3>
-				<div class="news-entries" ng-repeat="entry in news.entries">
-					<div class='news-entry'>
-						<h3 class="title news-title">{{entry.title}}</h3>
+				<div class="list-entries" ng-repeat="entry in news.entries">
+					<div class='list-entry'>
+						<h3 class="title entry-title">{{entry.title}}</h3>
 						<h4 class="date">{{entry.date}}</h4>
 						<p class="content">{{entry.content}}</p>
 					</div>

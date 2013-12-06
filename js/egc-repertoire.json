@@ -26,7 +26,7 @@
 		{"id":24,"title":"Star Spangled Banner","description":"Francis Scott Key・詞　/　John Stafford Smith・曲　/　Steven M. Demorest・編"},
 		{"id":25,"title":"ちいさい秋みつけた","description":"サトウハチロー・詞 / 中田喜直・曲、編"},
 		{"id":26,"title":"筑波山麓合唱団","description":"永六輔・詞 /　いずみたく・曲"},
-		{"id":27,"title":"鉄腕アトム","description":"谷川俊太郎・詞 /　高井達雄・曲 / 猪間道明・編"},
+		{"id":27,"title":"鉄腕アトム","description":"谷川俊太郎・詞 /　高井達雄・曲 / 猪間道明・編", "audioURL":"audio/atom.mp3"},
 		{"id":28,"title":"峠の我が家","description":"Traditional Cowboy Song 岩谷時子・詞 /　W.L.・編"},
 		{"id":29,"title":"峠の我が家","description":"男声四部岩谷時子・詞 / W.L・編"},
 		{"id":30,"title":"遠き山に日は落ちて","description":"Massa Dear　堀内敬三・詞　/　ドボルザーク・曲"},
