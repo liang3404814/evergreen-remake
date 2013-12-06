@@ -212,6 +212,11 @@ header {
 		color: rgb(223, 232, 215);
 	}
 
+	.about-header {
+		color: rgb(60, 114, 4);
+		font-weight: 600;
+	}
+
 	.entry {
 
 	}
