@@ -52,3 +52,9 @@ function newsListingControl ($scope, $routeParams, $http) {
 		$scope.news = data;
 	});
 }
+
+function repertoireListingControl ($scope, $routeParams, $http) {
+	$http.get('js/egc-repertoire.json').success(function(data) {
+		$scope.repertoire = data;
+	});
+}
