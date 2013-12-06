@@ -45,7 +45,8 @@ a:hover {
 
 .nav a {
 	font-weight: lighter;
-	font-size: 140%;
+	font-family: arial;
+	font-size: 110%;
 }
 
 .nav > li > a {
