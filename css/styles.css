@@ -88,8 +88,8 @@ header {
 }
 
 .about-intro {
-	height: 400px;
-	background-position: 50% 0;
+	height: 200px;
+	background-position: 50% 16%;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-image: url(../img/concert-vector.png);
@@ -218,12 +218,18 @@ header {
 		font-weight: 600;
 	}
 
+	.about-intro {
+		padding-top: 10px;
+		vertical-align: middle;
+		text-align: center;
+	}
+
 	.about-title {
 		color: #CCC;
 		font-size: 45px;
 		
-		padding-top: 10px;
 	}
+
 	.entry {
 
 	}
