@@ -44,6 +44,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
 });
 
 
+
 //News Loading controller
 function newsListingControl ($scope, $routeParams, $http) {
 	$http.get('js/egc-news.json')
@@ -51,4 +52,3 @@ function newsListingControl ($scope, $routeParams, $http) {
 		$scope.news = data;
 	});
 }
-
