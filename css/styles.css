@@ -245,6 +245,10 @@ header {
 		font-size: 125%;
 	}
 
+	.news-title {
+		text-align: left;
+	}
+
 	/*Footer*/
 
 	footer {
