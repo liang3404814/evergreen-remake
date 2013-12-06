@@ -6,8 +6,20 @@
 			</div>
 		</section>
 		<section class="news row">
-			<div class="news-wrapper col-md-10 col-md-offset-1">
+			<div class="news-wrapper col-md-10 col-md-offset-1" ng-controller="newsListingControl">
 				<h3 class="section-label">News</h3>
+				<div class="news-entries" ng-repeat="entry in news.entries">
+					<div class='news-entry'>
+						<p>
+							<span class="title">{{entry.title}}</span></br>
+							<span class="date">{{entry.date}}</span>
+						</p>
+						<p class="content">{{entry.content}}</p>
+					</div>
+				</div>
+
+
+				<!-- <h3 class="section-label">News</h3>
 				<div class="news-entries">
 					<div class='news-entry'>
 						<p>
@@ -30,7 +42,7 @@
 						</p>
 						<p class="content">Today is the launch of our new website! Please take a look around!</p>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</section>
 

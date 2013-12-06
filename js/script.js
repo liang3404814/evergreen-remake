@@ -5,6 +5,7 @@ var myApp = /**
 */
 angular.module('egc', [ 'ui.router', 'ngRoute']);
 
+// Routing Settings
 myApp.config(function($stateProvider, $urlRouterProvider) {
 
 	// redirects default landing and non-matched requests to "/" aka home
@@ -41,3 +42,13 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
 		templateUrl: "partials/contact.html"
 	})
 });
+
+
+//News Loading controller
+function newsListingControl ($scope, $routeParams, $http) {
+	$http.get('js/egc-news.json')
+		.success(function(data) {
+		$scope.news = data;
+	});
+}
+
