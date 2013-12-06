@@ -285,6 +285,14 @@ footer .entry .content p {
 
 }
 
+
+/*Temporary fix for Bootstrap 3 scroll bug, and this 
+is expected to be fixed in 3.1.0.
+*/
+@media (min-width: 768px) {
+  .row { margin-right: 0; margin-left: 0; }
+}
+
 @media (max-width: 767px) {
     .intro-title h2 {
     	font-size: 300%;
