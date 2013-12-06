@@ -184,6 +184,7 @@ header {
 
 	.entries {
 		padding-top: 10px;
+		padding-bottom: 40px;
 		margin-left: 15px;
 		margin-right: 15px;
 	}
@@ -212,6 +213,17 @@ header {
 		color: rgb(223, 232, 215);
 	}
 
+	.about-header {
+		color: rgb(60, 114, 4);
+		font-weight: 600;
+	}
+
+	.about-title {
+		color: #CCC;
+		font-size: 45px;
+		
+		padding-top: 10px;
+	}
 	.entry {
 
 	}
