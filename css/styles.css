@@ -4,10 +4,16 @@
 
 /*Global Modification*/
 .egc-container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
 }
 
 body {
@@ -17,13 +23,13 @@ body {
 
 a, h1, h2, h3, h4, h5 {
 	font-family : 'Source Sans Pro', 'Gill Sans', 'Gill Sans MT', "Helvetica Neue", 'Helvetica', 'Arial',
-	 sans-serif;
+	sans-serif;
 	color : rgb(0, 0, 0);
 }
 
 p {
-	 font-family : 'Bitter', 'Perpetua', 
-	 serif;
+	font-family : 'Bitter', 'Perpetua', 
+	serif;
 }
 
 a,
@@ -146,157 +152,157 @@ header {
 /*.upcoming-event h3,
 .upcoming-event h4, {
 	padding: 0px;
-}*/
+	}*/
 
-.upcoming-event a {
-	color: rgb(60, 114, 4);
-}
+	.upcoming-event a {
+		color: rgb(60, 114, 4);
+	}
 
-.upcoming-event .title {
-	font-size: 250%;
-	font-weight: 600;
-	color: rgb(29, 64, 3);
-	padding-bottom: 0px;
-}
+	.upcoming-event .title {
+		font-size: 250%;
+		font-weight: 600;
+		color: rgb(29, 64, 3);
+		padding-bottom: 0px;
+	}
 
-.upcoming-event .subtitle {
-	font-size: 230%;
-	font-style: italic;
-	font-weight: lighter;
-}
+	.upcoming-event .subtitle {
+		font-size: 230%;
+		font-style: italic;
+		font-weight: lighter;
+	}
 
-.details h5 {
-	font-size: 140%;
-}
-
-
-
-/* Entries */
-
-.entries {
-	padding-top: 10px;
-	margin-left: 15px;
-	margin-right: 15px;
-}
-
-.event-back {
-	margin:0px 0px 0px 0px;
-	background-position: 50% 0;
-	background-size: cover;
-	background-image: url(../img/witewall_3.png);
-	border-radius: 10px;
-	box-shadow: 5px 5px 5px #777;
-	margin-bottom: 5px;
-}
-
-.event-title {
-	padding-top: 20px;
-}
-
-.about-border {
-	border-left: solid 5px;
-	line-height: 20px;
-	padding-left: 5px; 
-}
-
-.about-footer {
-	color: rgb(223, 232, 215);
-}
-
-.entry {
-
-}
-
-.entry .entry-header h4 {
-	color: rgb(60, 114, 4);
-	font-weight: 600;
-}
-
-.entry .content p {
-	color: rgb(29, 64, 3);
-	font-size: 75%;
-}
-
-.news-entry, 
-.song-entry {
-	border: 2px solid green;
-	border-radius: 8px;
-	margin: 25px;
-	padding: 15px;
-}
-
-.news-template {
-	display: none;
-}
-
-.date {
-	font-style: italic;
-}
-
-.title {
-	font-weight: bold;
-	text-align: center;
-	font-size: 125%;
-}
-
-/*Footer*/
-
-footer {
-	background-color: rgba(82, 70, 81, 1);
-	padding-top: 10px;
-	margin-top: 10px;
-}
-
-.footer-wrapper {
-	margin-left: 15px;
-	margin-right: 15px;
-}
-
-footer .entry .entry-header h4 {
-	color: rgb(223, 232, 215);
-	font-weight: 600;
-}
-
-footer .entry .content p {
-	color: rgb(223, 232, 215);
-}
-
-.bottom-bar {
-	background-color: rgba(51, 44, 51, 1);
-	color: rgb(223, 232, 215);
-	text-align: center;
-}
-
-.bottom-bar p {
-	font-family : 'Source Sans Pro', 'Gill Sans', 'Gill Sans MT', "Helvetica Neue", 'Helvetica', 'Arial',
-	 sans-serif;
-	margin-top: 10px;
-}
-
-/*Media Queries*/
+	.details h5 {
+		font-size: 140%;
+	}
 
 
-@media (max-width: 1200px) {
 
-}
+	/* Entries */
 
-@media (max-width: 992px) {
+	.entries {
+		padding-top: 10px;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+
+	.event-back {
+		margin:0px 0px 0px 0px;
+		background-position: 50% 0;
+		background-size: cover;
+		background-image: url(../img/witewall_3.png);
+		border-radius: 10px;
+		box-shadow: 5px 5px 5px #777;
+		margin-bottom: 5px;
+	}
+
+	.event-title {
+		padding-top: 20px;
+	}
+
+	.about-border {
+		border-left: solid 5px;
+		line-height: 20px;
+		padding-left: 5px; 
+	}
+
+	.about-footer {
+		color: rgb(223, 232, 215);
+	}
+
+	.entry {
+
+	}
+
+	.entry .entry-header h4 {
+		color: rgb(60, 114, 4);
+		font-weight: 600;
+	}
+
+	.entry .content p {
+		color: rgb(29, 64, 3);
+		font-size: 75%;
+	}
+
+	.news-entry, 
+	.song-entry {
+		border: 2px solid green;
+		border-radius: 8px;
+		margin: 25px;
+		padding: 15px;
+	}
+
+	.news-template {
+		display: none;
+	}
+
+	.date {
+		font-style: italic;
+	}
+
+	.title {
+		font-weight: bold;
+		text-align: center;
+		font-size: 125%;
+	}
+
+	/*Footer*/
+
+	footer {
+		background-color: rgba(82, 70, 81, 1);
+		padding-top: 10px;
+		margin-top: 10px;
+	}
+
+	.footer-wrapper {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+
+	footer .entry .entry-header h4 {
+		color: rgb(223, 232, 215);
+		font-weight: 600;
+	}
+
+	footer .entry .content p {
+		color: rgb(223, 232, 215);
+	}
+
+	.bottom-bar {
+		background-color: rgba(51, 44, 51, 1);
+		color: rgb(223, 232, 215);
+		text-align: center;
+	}
+
+	.bottom-bar p {
+		font-family : 'Source Sans Pro', 'Gill Sans', 'Gill Sans MT', "Helvetica Neue", 'Helvetica', 'Arial',
+		sans-serif;
+		margin-top: 10px;
+	}
+
+	/*Media Queries*/
 
 
-}
+	@media (max-width: 1200px) {
+
+	}
+
+	@media (max-width: 992px) {
+
+
+	}
 
 
 /*Temporary fix for Bootstrap 3 scroll bug, and this 
 is expected to be fixed in 3.1.0.
 */
 @media (min-width: 768px) {
-  .row { margin-right: 0; margin-left: 0; }
+	.row { margin-right: 0; margin-left: 0; }
 }
 
 @media (max-width: 767px) {
-    .intro-title h2 {
-    	font-size: 300%;
-    }
+	.intro-title h2 {
+		font-size: 300%;
+	}
 
 	.upcoming-event .title {
 		font-size: 230%;
