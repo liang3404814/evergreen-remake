@@ -217,6 +217,12 @@ header {
 		font-weight: 600;
 	}
 
+	.about-title {
+		color: #CCC;
+		font-size: 45px;
+		
+		padding-top: 10px;
+	}
 	.entry {
 
 	}
