@@ -150,8 +150,8 @@ header {
 }
 
 .about-intro {
-	height: 400px;
-	background-position: 50% 0;
+	height: 200px;
+	background-position: 50% 16%;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-image: url(../img/concert-vector.png);
@@ -242,9 +242,22 @@ header {
 	color: rgb(223, 232, 215);
 }
 
+
 .about-header {
 	color: rgb(60, 114, 4);
 	font-weight: 600;
+}
+
+.about-intro {
+	padding-top: 10px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.about-title {
+	color: #FFF;
+	font-size: 45px;
+	
 }
 
 .about-title {
