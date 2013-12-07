@@ -78,6 +78,8 @@ header {
 
 /*Shared Components*/
 
+
+
 .entries {
 	padding-top: 10px;
 	padding-bottom: 40px;
@@ -141,33 +143,22 @@ header {
 
 /*Intro*/
 
-.intro, .news-intro, .about-intro, .event-intro {
-	height: 470px;
-	background-image: url(../img/EGC-Intro.jpg);
-	background-position: 50% 0;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.about-intro {
-	height: 200px;
-	background-position: 50% 16%;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-image: url(../img/concert-vector.png);
-}
-
-.event-intro {
-	height: 200px;
-}
-
-.event-intro h3 {
-	font-size: 45px;
+.title-intro {
+	padding-top: 10px;
 	vertical-align: middle;
+	text-align: center;
 }
 
-.news-intro {
-	height: 200px;
+.light-title {
+	color: #FFF;
+	font-size: 280%;
+	padding-top: 10px;
+}
+
+.dark-title {
+	color: #000;
+	font-size: 280%;
+	padding-top: 10px;
 }
 
 .intro-title {
@@ -179,6 +170,29 @@ header {
 	font-size: 500%;
 	font-weight: lighter;
 }
+
+.home-intro, .news-intro, .event-intro, .gallery-intro {
+	background-image: url(../img/EGC-Intro.jpg);
+	background-position: 50% 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.about-intro {
+	background-position: 50% 16%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(../img/concert-vector.png);
+}
+
+.thick-intro {
+	height: 470px;
+}
+
+.thin-intro {
+	height: 200px;
+}
+
 
 /*Upcoming Events*/
 
@@ -248,29 +262,8 @@ header {
 	font-weight: 600;
 }
 
-.about-intro {
-	padding-top: 10px;
-	vertical-align: middle;
-	text-align: center;
-}
-
-.about-title {
-	color: #FFF;
-	font-size: 45px;
-	
-}
-
-.about-title {
-	color: #CCC;
-	font-size: 45px;
-
-	padding-top: 10px;
-}
 
 
-.news-template {
-	display: none;
-}
 
 
 /*Footer*/
