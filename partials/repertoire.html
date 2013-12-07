@@ -36,7 +36,7 @@
 							</div>
 							<div class="song-media col-md-6">
 								<div class=" song-audio" ng-if="song.audioURL">
-									<audio id="player2" src="{{song.audioURL}}" type="audio/mpeg" controls="controls" mediaelement></audio>
+									<audio id="player2" src="{{song.audioURL}}" type="audio/mpeg" controls="controls" preload="metadata" mediaelement></audio>
 								</div>
 								<div class=" song-video" ng-if="song.videoURL">
 
