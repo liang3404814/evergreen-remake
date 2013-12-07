@@ -3,7 +3,7 @@ var myApp = /**
 *
 * Overarching module for the EGC website
 */
-angular.module('egc', [ 'ui.router', 'ngRoute']);
+angular.module('egc', [ 'ngAnimate', 'ui.router', 'ngRoute']);
 
 // Routing Settings
 myApp.config(function($stateProvider, $urlRouterProvider) {

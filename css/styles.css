@@ -52,6 +52,7 @@ a:hover {
 .nav > li > a {
 	color: white;
 	padding: 10px 10px;
+	background: none;
 }
 
 .nav > li > a:hover {
@@ -94,6 +95,41 @@ header {
 	margin: 25px;
 	padding: 15px;
 }
+
+/* AngularJS Specific Animation STARTS */
+
+/*.list-entry.ng-enter, 
+.list-entry.ng-leave {
+	position: relative;
+	-webkit-transition:all 0.2s ease-in-out;
+	-moz-transition:all 0.2s ease-in-out;
+	-o-transition:all 0.2s ease-in-out;
+	transition:all 0.2s ease-in-out;
+}
+
+.list-entry.ng-enter-stagger,
+.list-entry.ng-leave-stagger {
+	-webkit-transition-delay: 0.01s;
+	transition-delay: 0.01s;
+
+	-webkit-transition-duration: 0s;
+	transition-duration: 0s;
+
+}
+
+.list-entry.ng-enter.ng-enter-active,
+.list-entry.ng-leave {
+	opacity: 1;
+	left: 0;
+}
+
+.list-entry.ng-leave.ng-leave-active,
+.list-entry.ng-enter {
+	opacity: 0;
+	left: 500px;
+}*/
+
+/* AngularJS Specific Animation ENDS */
 
 .property,
 .value {
@@ -432,6 +468,10 @@ div.img:hover {
 
 /*Repertoire*/
 
+.search-tools {
+	padding-top: 30px;
+}
+
 .listen a, .watch a {
 	float: right;
 }
@@ -444,3 +484,6 @@ div.img:hover {
 	font-size: 90%;
 	font-style: italic;
 }
+
+
+
