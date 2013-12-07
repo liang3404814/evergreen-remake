@@ -6,7 +6,7 @@
 		{"id":4,"title":"アニー・ローリー","description":"スコットランド民謡　/　藤浦洸・詞　/　Lady John Scott ・曲　/　D.P. ・編"},
 		{"id":5,"title":"Ave Verum Corpus","description":"Wolfgang Amadeus Mozart・曲"},
 		{"id":6,"title":"いざ起て戦人よ","description":"藤井泰一郎・詞 / グラナハム・曲"},
-		{"id":7,"title":"宇宙戦艦ヤマト","description":"阿久悠・詞　/　宮川泰・曲　/　猪間道明・編"},
+		{"id":7,"title":"宇宙戦艦ヤマト","description":"阿久悠・詞　/　宮川泰・曲　/　猪間道明・編", "audioURL":"audio/yamato.mp3"},
 		{"id":8,"title":"組曲「海」","description":"北川冬彦・詞　/　高田三郎　・曲"},
 		{"id":9,"title":"オーラリー","description":"W. Fosdick・詞 / G. Poulton・曲 / 安田二郎・詞 /　西脇久夫・編"},
 		{"id":10,"title":"ーレグ公の歌","description":"(ロシア民謡　/　三沢郷・編)"},
