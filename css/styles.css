@@ -171,7 +171,7 @@ header {
 	font-weight: lighter;
 }
 
-.home-intro, .news-intro, .event-intro, .gallery-intro {
+.general-intro {
 	background-image: url(../img/EGC-Intro.jpg);
 	background-position: 50% 0;
 	background-size: cover;
