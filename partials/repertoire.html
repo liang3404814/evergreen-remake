@@ -35,11 +35,14 @@
 
 							</div>
 							<div class="song-media col-md-6">
-								<div class="ui360" ng-if="song.audioURL">
-									<!-- <audio id="player2" src="{{song.audioURL}}" type="audio/mpeg" controls="controls" preload="metadata" mediaelement></audio> -->
+								<div class="song-audio" ng-if="song.audioURL">
+									
+									<button class="btn btn-default btn-sm" ng-click="playPause(song.audioURL)">play/pause</button>
+									<span>Position {{position}}</span>
+									<span>Duration {{duration}}</span>
 
 								</div>
-								<div class=" song-video" ng-if="song.videoURL">
+								<div class="song-video" ng-if="song.videoURL">
 
 								</div>
 							</div>
