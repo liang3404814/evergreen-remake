@@ -509,11 +509,13 @@ div.img:hover .mask {
 }
 
 .mask p { 
-	color: #000;
+	color: #FFF;
 	opacity: 1;
     transition: all 0.2s linear;
 	font-family : 'Source Sans Pro', 'Gill Sans', 'Gill Sans MT', "Helvetica Neue", 'Helvetica', 'Arial';
-	text-align: center;
+	text-align: left;
+	font-size: 200%;
+	padding-left: 10px;
 }
 
 .left-column div.img {
@@ -524,9 +526,6 @@ div.img:hover .mask {
 .right-column div.img {
 	float: left;
 	padding-left: 0px;
-}
-
-div.img:hover {
 }
 
 div.col-md-6.ng-scope {
