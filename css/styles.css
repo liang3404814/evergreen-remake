@@ -382,7 +382,6 @@ footer .entry .content p {
 
 
 .stuck {
-
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -435,10 +434,6 @@ footer .entry .content p {
 		font-size: 220%;
 	}
 
-	.list-entry {
-		height: 95px;
-	}
-
 }
 
 @media (max-width: 992px) {
@@ -447,7 +442,9 @@ footer .entry .content p {
 		padding: 40px 0px 10px 0px;
 	}
 
-
+	.list-entry-2-columns {
+		
+	}
 
 }
 
@@ -549,7 +546,7 @@ div.img:hover .mask {
 	padding-left: 0px;
 }
 
-div.col-md-6.ng-scope {
+.img-container {
 	margin: 6px;
 	width: 440px;
 	height: 250px;

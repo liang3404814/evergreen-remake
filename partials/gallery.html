@@ -8,7 +8,7 @@
 		<div class="green-seperator"></div>
 		<div class="row">
 			<div class="column-container gallery col-md-10 col-md-offset-1" ng-controller="galleryListingControl">
-				<div class="col-md-6" ng-repeat="image in gallery.images">
+				<div class="col-md-6 img-container" ng-repeat="image in gallery.images">
 					<div class="img">
 						<a href={{image.src}}><img src={{image.src}} alt={{image.src}} width="440" height="250"></a>
 						<div class="mask">
