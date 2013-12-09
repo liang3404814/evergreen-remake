@@ -558,8 +558,16 @@ footer .entry .content p {
 		margin-left: 0px;
 	}
 
-	.audio-list {
-		font-size: 60%;
+	.audio-list th {
+		font-size: 100%;
+	}
+
+	.audio-list td {
+		font-size: 90%;
+	}
+
+	.progress {
+		height: 5px;
 	}
 
 }

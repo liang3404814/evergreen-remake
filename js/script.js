@@ -111,6 +111,7 @@ function repertoireListingControl ($scope, $routeParams, $http) {
 		audioElement.type = 'audio/mp3';
 		audioElement.title = song.title;
 		audioElement.description = song.description;
+		audioElement.egc_id = song.id;
 
 		$scope.playlist.push(audioElement);
 
