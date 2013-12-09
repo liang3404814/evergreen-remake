@@ -3,7 +3,7 @@ var myApp = /**
 *
 * Overarching module for the EGC website
 */
-angular.module('egc', [ 'ngAnimate', 'ui.router', 'ngRoute', 'audioPlayer']);
+angular.module('egc', [ 'ngAnimate', 'ui.router', 'ui', 'ngRoute', 'audioPlayer']);
 
 // Routing Settings
 myApp.config(function($stateProvider, $urlRouterProvider) {
@@ -27,7 +27,8 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
 	})
 	.state('repertoire', {
 		url: "/repertoire",
-		templateUrl: "partials/repertoire.html"
+		templateUrl: "partials/repertoire.html",
+		controller: repertoireListingControl
 	})
 	.state('events', {
 		url: "/events",
@@ -67,6 +68,12 @@ function newsListingControl ($scope, $routeParams, $http) {
 
 function repertoireListingControl ($scope, $routeParams, $http) {
 	// $scope.player = AudioService;
+
+	// for sticky waypoints parameter evaluation
+	$scope.sticky = 
+		"sticky", 
+		{wrapper : '<div class="sticky-wrapper row" />'};
+	 
 
 	$scope.playlist = [];
 
