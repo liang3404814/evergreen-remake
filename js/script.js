@@ -96,9 +96,14 @@ function repertoireListingControl ($scope, $routeParams, $http) {
 	
 }
 
+function eventsListingControl ($scope, $routeParams, $http) {
+	$http.get('js/egc-events.json').success(function(data) {
+		$scope.events = data;
+	});
+}
+
 function galleryListingControl ($scope, $routeParams, $http) {
-	$http.get('js/egc-gallery.json')
-		.success(function(data) {
-			$scope.gallery = data;
-		});
+	$http.get('js/egc-gallery.json').success(function(data) {
+		$scope.gallery = data;
+	});
 }
