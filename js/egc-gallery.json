@@ -1,10 +1,10 @@
 {
 	"images": [
-		{"src":"img/gallery/img01.jpg"},
-		{"src":"img/gallery/img02.jpg"},
-		{"src":"img/gallery/img03.jpg"},
-		{"src":"img/gallery/img04.jpg"},
-		{"src":"img/gallery/img05.jpg"},
-		{"src":"img/gallery/img06.jpg"}
+		{"src":"img/gallery/img01.jpg", "info":"Safeco Field: August 23rd 2012"},
+		{"src":"img/gallery/img02.jpg", "info":"Insert text here"},
+		{"src":"img/gallery/img03.jpg", "info":"Insert text here"},
+		{"src":"img/gallery/img04.jpg", "info":"Insert text here"},
+		{"src":"img/gallery/img05.jpg", "info":"Insert text here"},
+		{"src":"img/gallery/img06.jpg", "info":"Insert text here"}
 	]
 }
