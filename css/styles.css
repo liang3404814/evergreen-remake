@@ -39,14 +39,21 @@ a:hover {
 	font-size: 100%;
 	text-decoration: none;
 	color: rgb(0, 0, 0);
+	font-family: "Maison Neue Book", Helvetica, Arial, Sans-Serif, sans-serif;
+
 }
 
 /*Navigation*/
 
 .nav a {
 	font-weight: lighter;
-	font-family: arial, sans-serif;
-	font-size: 110%;
+	font-size: 90%;
+	-o-transition: 0.2s ease-out;
+  	-ms-transition: 0.2s ease-out;
+  	-moz-transition: 0.2s ease-out;
+  	-webkit-transition: 0.2s ease-out;
+  	transition: 0.2s ease-out;
+  	text-transform: uppercase;
 }
 
 .nav > li > a {
@@ -57,7 +64,13 @@ a:hover {
 
 .nav > li > a:hover {
 	color: rgb(0, 0, 0);
-	background: none;  
+	background: none;
+	-o-transition: 0.3s ease-out;
+  	-ms-transition: 0.3s ease-out;
+  	-moz-transition: 0.3s ease-out;
+  	-webkit-transition: 0.3s ease-out;
+  	transition: 0.3s ease-out;
+
 }
 
 header {
@@ -65,15 +78,16 @@ header {
 }
 
 .header-wrapper {
-	padding:  30px 0px 30px 0px;
-	max-height: 120px;
+	padding:  90px 0px 10px 0px;
+	max-height: 150px;
 	width: 95%;
 	margin: 0 auto;
 }
 
 .brand a{
+	font-weight: lighter;
 	color: white;
-	font-size: 230%;
+	font-size: 260%;
 	line-height: 35px;
 }
 
@@ -94,6 +108,35 @@ header {
 	border-radius: 8px;
 	margin: 25px;
 	padding: 15px;
+	padding-top: 1px;
+}
+
+.news .list-entry h3, .news .list-entry h4 {
+	margin: 2px;
+	margin-left: 12px;
+	color: white;
+}
+
+.news .list-entry .entry-header {
+	background-color: rgba(90, 166, 12, 1);
+	padding: 5px;
+	margin-bottom: 5px;
+	width: 100%;
+}
+
+.news .list-entry {
+	padding: 0px;
+	padding-bottom: 5px;
+}
+
+.news .content {
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+
+.song .entry-title {
+	border-bottom: 1px solid #BBB;
 }
 
 .list-entry-2-columns {

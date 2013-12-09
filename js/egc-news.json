@@ -1,8 +1,8 @@
 {
 	"entries": [
-		{"date": "April 4, 2014", "title": "Willie's 21st birthday!", "content": "Today is Willie's 21st birthday! Make sure to say happy birthday to him! Captain AMERICA!"},
-		{"date": "January 1, 2013", "title": "Happy New Years!", "content": "Happy New Years everybody! Please enjoy! But be safe! Don't drink and drive!"},		
-		{"date": "December 4, 2013", "title": "Launch of new website!", "content": "Today is the launch of our new website! Please take a look around!"}
+		{"date": "April 4, 2014", "title": "Willie's 21st birthday!", "content": "Today is Willie's 21st birthday! Make sure to say happy birthday to him! Captain AMERICA! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."},
+		{"date": "January 1, 2013", "title": "Happy New Years!", "content": "Happy New Years everybody! Please enjoy! But be safe! Don't drink and drive! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."},		
+		{"date": "December 4, 2013", "title": "Launch of new website!", "content": "Today is the launch of our new website! Please take a look around! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}
 		
 	]
 }
