@@ -53,7 +53,7 @@
 									<div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" ng-style="{ width: audioPlayer.currentTime/audioPlayer.duration * 100 + '%' }" clickableProgressbar>
 										<span class="sr-only">{{ audioPlayer.currentTime*100/audioPlayer.duration + '%' + ' ' + 'Played' }}</span>
 									</div>
-									<div class="time collapse" ng-show="audioPlayer.formatTime">
+									<div class="time" ng-show="audioPlayer.formatTime">
 										<span>{{ audioPlayer.formatTime }}</span>
 										<b>/</b>
 										<span>{{ audioPlayer.formatDuration }}</span>
