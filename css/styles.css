@@ -407,6 +407,12 @@ header {
 		background-color: #FAFAFA;
 	}
 
+	.join-us a {
+		color: rgb(223, 232, 215);
+		text-decoration: underline;
+	}
+	
+
 }
 
 .player-wrapper {
