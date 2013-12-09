@@ -95,3 +95,10 @@ function repertoireListingControl ($scope, $routeParams, $http) {
 
 	
 }
+
+function galleryListingControl ($scope, $routeParams, $http) {
+	$http.get('js/egc-gallery.json')
+		.success(function(data) {
+			$scope.gallery = data;
+		});
+}
