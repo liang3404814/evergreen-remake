@@ -1,10 +1,10 @@
 {
 	"images": [
-		{"src":"../img/gallery/img01.jpg"},
-		{"src":"../img/gallery/img02.jpg"},
-		{"src":"../img/gallery/img03.jpg"},
-		{"src":"../img/gallery/img04.jpg"},
-		{"src":"../img/gallery/img05.jpg"},
-		{"src":"../img/gallery/img06.jpg"}
+		{"src":"img/gallery/img01.jpg"},
+		{"src":"img/gallery/img02.jpg"},
+		{"src":"img/gallery/img03.jpg"},
+		{"src":"img/gallery/img04.jpg"},
+		{"src":"img/gallery/img05.jpg"},
+		{"src":"img/gallery/img06.jpg"}
 	]
 }
