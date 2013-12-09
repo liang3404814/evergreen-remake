@@ -88,6 +88,20 @@ function repertoireListingControl ($scope, $routeParams, $http) {
 		console.log($scope.playlist);
 	}
 
+	$scope.removeSongFromListByIndex = function(index) {
+
+		if (index === $playList.length) {
+			$scope.audioPlayer.prev();
+		} else {
+			$scope.audioPlayer.next();
+		}
+
+		$scope.audioPlayer.pause();
+
+		$scope.playlist.splice(index, 1);
+		console.log($scope.playlist);
+	}
+
 
 	$http.get('js/egc-repertoire.json').success(function(data) {
 		$scope.repertoire = data;

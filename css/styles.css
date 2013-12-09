@@ -383,6 +383,7 @@ footer .entry .content p {
 
 
 .stuck {
+
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -391,6 +392,19 @@ footer .entry .content p {
 	box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
 	background-color: #FAFAFA;
 
+}
+
+.player-wrapper {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.player-wrapper .section-label {
+	text-align: center;
+}
+
+.player-wrapper .prompt {
+	text-align: center;
 }
 
 .song-audio {
@@ -416,6 +430,10 @@ footer .entry .content p {
 		font-size: 220%;
 	}
 
+	.list-entry {
+		height: 95px;
+	}
+
 }
 
 @media (max-width: 992px) {
@@ -424,9 +442,7 @@ footer .entry .content p {
 		padding: 40px 0px 10px 0px;
 	}
 
-	.list-entry-2-columns {
-		
-	}
+
 
 }
 
