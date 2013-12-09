@@ -40,7 +40,6 @@ a:hover {
 	text-decoration: none;
 	color: rgb(0, 0, 0);
 	font-family: "Maison Neue Book", Helvetica, Arial, Sans-Serif, sans-serif;
-
 }
 
 /*Navigation*/
@@ -414,6 +413,7 @@ footer .entry .content p {
 .song-description p {
 	margin-top: 5px;
 }
+
 /*Media Queries*/
 
 
@@ -504,7 +504,34 @@ footer .entry .content p {
 }
 
 div.img {
-	padding: 6px; 
+	padding-bottom: 6px; 
+	padding-top: 6px;
+	position: relative;
+}
+
+.mask {
+    opacity: 0;
+    background-color: rgba(90, 166, 12, 0.7); 
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+    overflow: hidden;
+    width:440px;
+    height:80px;
+	top:176px;
+}
+
+div.img:hover .mask { 
+    opacity: 1;
+}
+
+.mask p { 
+	color: #FFF;
+	opacity: 1;
+    transition: all 0.2s linear;
+	font-family : 'Source Sans Pro', 'Gill Sans', 'Gill Sans MT', "Helvetica Neue", 'Helvetica', 'Arial';
+	text-align: left;
+	font-size: 200%;
+	padding-left: 10px;
 }
 
 .left-column div.img {
@@ -517,9 +544,10 @@ div.img {
 	padding-left: 0px;
 }
 
-div.img:hover {
-	color: #FFF;
-	opacity: .6; 
+div.col-md-6.ng-scope {
+	margin: 6px;
+	width: 440px;
+	height: 250px;
 }
 
 .clear {
@@ -535,6 +563,7 @@ div.img:hover {
 }
 
 
+
 /* Contact Us */
 
 .contact-us {
@@ -548,6 +577,15 @@ div.img:hover {
 
 .mail {
 	padding-top:10px;
+}
+
+.contact-container span {
+	color: rgba(90, 166, 12, 0.7);;
+}
+
+.contact-container em {
+	text-decoration: underline;
+	font-style: normal;
 }
 
 
