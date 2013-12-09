@@ -278,6 +278,7 @@ header {
 }
 
 
+
 /*Upcoming Events*/
 
 .upcoming-event .news {
@@ -320,7 +321,7 @@ header {
 	margin:0px 0px 0px 0px;
 	background-position: 50% 0;
 	background-size: cover;
-	background-image: url(../img/witewall_3.png);
+	background-image: url(../img/satinweave.png);
 	/*border-radius: 10px;*/
 	box-shadow: 5px 5px 5px #777;
 	margin-bottom: 5px;
