@@ -9,7 +9,54 @@
 
 			<section class="repertoire" ng-controller="repertoireListingControl">
 
-				<div class="search-tools row">
+				<div class="tool audio-player row">
+					<div class="player-wrapper col-md-offset-3 col-md-6">
+
+						<div class="audio-control">
+
+							<button ng-click="audioPlayer.playPause()" type="button" class="btn btn-default">
+								<span class="glyphicon glyphicon-play"></span>
+							</button>
+
+							<button ng-click="audioPlayer.next()" type="button" class="btn btn-default">
+								<span class="glyphicon glyphicon-fast-backward"></span> Prev
+							</button>
+
+							<button ng-click="audioPlayer.prev()" type="button" class="btn btn-default">
+								<span class="glyphicon glyphicon-fast-forward"></span> Next
+							</button>
+							
+						</div>
+
+						<div class="audio-list">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>#</th>
+										<th>Song</th>
+										<th>Description</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>asdfasdfasdf</td>
+										<td>asdfasdfasdf</td>
+										<td>asdfasdfasd</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+
+
+
+						<audio  player-control="audio-player" data-playlist="playlist" audio-player>
+							<source src="{{song.audioURL}}" type="audio/mpeg3"></source>
+						</audio>
+					</div>
+				</div>
+
+				<div class="tool search-tools row">
 					<div class="search-box col-md-offset-3 col-md-6">
 						<div class="form-group">
 							<input type="text" ng-model="search" class="form-control" placeholder="Type to start searching">
@@ -22,32 +69,20 @@
 
 				<div class="row listing">
 					<div class="col-md-10 col-md-offset-1" >
-
-						<!-- Start of one song -->
-						<div class='list-entry row' ng-repeat="song in repertoire.entries | filter: search">
-							<div class="entry-info col-md-6">
-								<div class=" title entry-title">
-									<h3>{{song.title}}</h3>
+						<div class='list-entry list-entry-2-columns col-md-6' ng-repeat="song in repertoire.entries | filter: search">
+							<div class="entry-info">
+								<div class=" title entry-title row">
+									<h3 class="col-md-8">{{song.title}}</h3>
+									<div class="song-audio col-md-4" ng-if="song.audioURL">
+										<button class="btn btn-default btn-primary btn-sm" ng-click="">Add to Playlist</button>
+									</div>
 								</div>
-								<div class=" song-description">
-									<p>{{song.description}}</p>
+								<div class="song-description row">
+									<p class="col-md-12">{{song.description}}</p>
 								</div>
 
-							</div>
-							<div class="song-media col-md-6">
-								<div class="song-audio" ng-if="song.audioURL">
-									
-									<button class="btn btn-default btn-sm" ng-click="playPause(song.audioURL)">play/pause</button>
-									<span>Position {{position}}</span>
-									<span>Duration {{duration}}</span>
-
-								</div>
-								<div class="song-video" ng-if="song.videoURL">
-
-								</div>
 							</div>
 						</div>
-						<!-- End of one song -->
 
 					</div>
 				</div>

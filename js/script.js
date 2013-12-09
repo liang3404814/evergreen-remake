@@ -3,7 +3,7 @@ var myApp = /**
 *
 * Overarching module for the EGC website
 */
-angular.module('egc', [ 'ngAnimate', 'ui.router', 'ngRoute', 'Audio5']);
+angular.module('egc', [ 'ngAnimate', 'ui.router', 'ngRoute', 'audioPlayer']);
 
 // Routing Settings
 myApp.config(function($stateProvider, $urlRouterProvider) {
@@ -65,36 +65,14 @@ function newsListingControl ($scope, $routeParams, $http) {
 	});
 }
 
-function repertoireListingControl ($scope, $routeParams, $http, AudioService) {
-	$scope.player = AudioService;
+function repertoireListingControl ($scope, $routeParams, $http) {
+	// $scope.player = AudioService;
+
+	$scope.playlist = [];
+
 
 	$http.get('js/egc-repertoire.json').success(function(data) {
 		$scope.repertoire = data;
-		
-
-		var oldURL;
-
-		// a transparent function that first loads the file, then calls Audio5's playPause method.
-		$scope.playPause = function (url) {
-			if (!(url === oldURL)) {
-				$scope.player.load(url);
-				oldURL = url;
-			}
-
-			$scope.player.playPause();
-		}
-
-		$scope.player.on('timeupdate',function(time, duration){
-	        $scope.$apply(function(){
-	          $scope.position = time;
-	          $scope.duration = duration;
-	        });
-	    });
-
-	    $scope.player.on('timeupdate',function(){
-	      $scope.$apply();
-	    })
-
 	});
 
 	

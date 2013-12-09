@@ -1,17 +1,6 @@
 angular.module('Audio5').directive('audio', function(AudioService){
   return {
     restrict: 'EA',
-    scope: {
-      'src': '=source'
-    },
-    template: '' +
-      '<div ng-transclude>' +
-        '<button class="btn btn-default btn-sm" ng-click="player.playPause()">play/pause</button>' +
-        '<div>position: {{position}}</div>' +
-        '<div>duration: {{duration}}</div>'+
-      '</div>',
-    replace: true,
-    transclude: true,
     controller: function($scope, $element, $attrs, $transclude) {
       $scope.player = AudioService;
 
@@ -22,9 +11,9 @@ angular.module('Audio5').directive('audio', function(AudioService){
         });
       });
 
-      $scope.$watch('src', function(new_value, old_value){
-        $scope.player.load(new_value);
-      });
+      link: function($scope, element, attrs) {
+        $scope.player.load(song.audioURL);
+      }
     }
   }
 });

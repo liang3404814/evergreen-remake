@@ -96,6 +96,11 @@ header {
 	padding: 15px;
 }
 
+.list-entry-2-columns {
+	width: 44%;
+	height: 125px;
+}
+
 /* AngularJS Specific Animation STARTS */
 
 /*.list-entry.ng-enter, 
@@ -338,10 +343,14 @@ footer .entry .content p {
 
 
 
-.song-media {
+
+.song-audio {
 	margin-top: 20px;
 }
 
+.song-description p {
+	margin-top: 5px;
+}
 /*Media Queries*/
 
 
@@ -420,11 +429,6 @@ div.img {
 	padding-right: 0px;
 }
 
-.col-md-6 {
-	padding-right:6px;
-	padding-left:6px;
-}
-
 .right-column div.img {
 	float: left;
 	padding-left: 0px;
@@ -468,7 +472,7 @@ div.img:hover {
 
 /*Repertoire*/
 
-.search-tools {
+.tool {
 	padding-top: 30px;
 }
 
