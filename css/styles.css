@@ -556,6 +556,15 @@ div.img:hover {
 	padding-top:10px;
 }
 
+.contact-container span {
+	color: rgba(90, 166, 12, 0.7);;
+}
+
+.contact-container em {
+	text-decoration: underline;
+	font-style: normal;
+}
+
 
 
 
