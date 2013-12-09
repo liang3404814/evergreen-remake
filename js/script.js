@@ -3,7 +3,7 @@ var myApp = /**
 *
 * Overarching module for the EGC website
 */
-angular.module('egc', [ 'ngAnimate', 'ui.router', 'ui', 'ngRoute', 'audioPlayer']);
+angular.module('egc', [ 'ngAnimate', 'ui.router', 'ui', 'ngRoute', 'audioPlayer', 'angular-parallax']);
 
 // Routing Settings
 myApp.config(function($stateProvider, $urlRouterProvider) {
@@ -15,7 +15,8 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
 
 	.state('home', {
 		url: "/",
-		templateUrl: "partials/home.html"
+		templateUrl: "partials/home.html",
+		controller: homeControl
 	})
 	.state('about', {
 		url: "/about",
@@ -58,10 +59,37 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
 
 
 
+
+
+myApp.directive('clickableProgressbar', ['', function(){
+	
+	return {
+		// name: '',
+		// priority: 1,
+		// terminal: true,
+		// scope: {}, // {} = isolate, true = child, false/undefined = no change
+		// cont­rol­ler: function($scope, $element, $attrs, $transclue) {},
+		// require: 'ngModel', // Array = multiple requires, ? = optional, ^ = check parent elements
+		restrict: 'A', // E = Element, A = Attribute, C = Class, M = Comment
+		// template: '',
+		// templateUrl: '',
+		// replace: true,
+		// transclude: true,
+		// compile: function(tElement, tAttrs, function transclude(function(scope, cloneLinkingFn){ return function linking(scope, elm, attrs){}})),
+		link: function($scope, iElm, iAttrs, controller) {
+			$(iElm).click(function() {
+				alert('yeah');
+			});
+		}
+	};
+}]);
+
+
+
 //News Loading controller
 function newsListingControl ($scope, $routeParams, $http) {
 	$http.get('js/egc-news.json')
-		.success(function(data) {
+	.success(function(data) {
 		$scope.news = data;
 	});
 }
@@ -71,9 +99,9 @@ function repertoireListingControl ($scope, $routeParams, $http) {
 
 	// for sticky waypoints parameter evaluation
 	$scope.sticky = 
-		"sticky", 
-		{wrapper : '<div class="sticky-wrapper row" />'};
-	 
+	"sticky", 
+	{wrapper : '<div class="sticky-wrapper row" />'};
+
 
 	$scope.playlist = [];
 
@@ -85,12 +113,13 @@ function repertoireListingControl ($scope, $routeParams, $http) {
 		audioElement.description = song.description;
 
 		$scope.playlist.push(audioElement);
+
 		console.log($scope.playlist);
 	}
 
 	$scope.removeSongFromListByIndex = function(index) {
 
-		if (index === $playList.length) {
+		if (index === $scope.playlist.length) {
 			$scope.audioPlayer.prev();
 		} else {
 			$scope.audioPlayer.next();
@@ -120,4 +149,8 @@ function galleryListingControl ($scope, $routeParams, $http) {
 	$http.get('js/egc-gallery.json').success(function(data) {
 		$scope.gallery = data;
 	});
+}
+
+function homeControl ($scope) {
+
 }

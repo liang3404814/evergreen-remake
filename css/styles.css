@@ -246,13 +246,15 @@ header {
 .intro-title h2 {
 	font-size: 500%;
 	font-weight: lighter;
+	color: #FFF;
 }
 
 .general-intro {
 	background-image: url(../img/EGC-Intro.jpg);
 	background-position: 50% 0;
-	background-size: cover;
+	background-size: 150%;
 	background-repeat: no-repeat;
+	-webkit-filter: brightness(100%);
 }
 
 .about-intro {
@@ -389,12 +391,17 @@ footer .entry .content p {
 	z-index: 1030;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
 	background-color: #FAFAFA;
+}
 
 }
 
 .player-wrapper {
 	padding-top: 10px;
 	padding-bottom: 10px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin: 0 auto;
+	width: 600px;
 }
 
 .player-wrapper .section-label {
@@ -405,9 +412,13 @@ footer .entry .content p {
 	text-align: center;
 }
 
+.play-state {
+	margin-top: 10px;
+}
+
 .progress .time {
 	position: absolute;
-	left: 50%;
+	left: 40%;
 }
 
 .song-audio {
