@@ -558,6 +558,11 @@ footer .entry .content p {
 		margin-left: 0px;
 	}
 
+	.audio-player {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+
 	.audio-list th {
 		font-size: 100%;
 	}
