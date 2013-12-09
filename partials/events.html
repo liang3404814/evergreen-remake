@@ -6,12 +6,41 @@
 				<h3 class="dark-title" lang="ja">イベント</h3>
 			</div>
 		</section>
+
+		<div class="green-seperator"></div>
 		
-		<section class="event-back row event-template">
+		
+		<div ng-controller="eventsListingControl">
+			<section class="event-back row" ng-repeat="entry in events.entries">	
+				
+				<div class="col-md-2 entries">
+					<h3 class="event-year">{{entry.year}}</h3>
+					<h1 class="event-date">{{entry.date}}</h1>
+				</div>
+
+				<div class="col-md-4 entries">
+					<h3 class="event-name-jp">{{entry['name-jp']}}</h3>
+					
+					
+					<p class="event-description-jp" lang="ja">{{entry['description-jp']}}</p>
+				</div>	
+
+				<div class="col-md-4 entries">
+					
+					<h3 class="event-name-en">{{entry['name-en']}}</h3>
+					<p class="event-description-en">{{entry['description-en']}}</p>
+					
+				</div>	
+
+			</section>
+		</div>
+
+
+		<!-- <section class="event-back row event-template">
 			
 				<div class="col-md-2 entries">
-					<h3 class="event-year">2013</h3>
-					<h1 class="event-date">Nov.4</h1>
+					<h3 class="event-year">2014</h3>
+					<h1 class="event-date">Jan.9</h1>
 				</div>
 				<div class="col-md-5 entries">
 					<h3 class="event-name-jp">故岩村浩男氏の記念コンサートを</h3>
@@ -37,10 +66,17 @@
 					<h1>Nov.4</h1>
 				</div>
 				<div class="col-md-5 entries">
-					<h3>故岩村浩男氏の記念コンサートを</h3>
-					<h3>Concert one</h3>
+					<h3>サクラコン2011年の開会式でアニメソングを数曲歌いました</h3>
+					<h3>Concert two</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					</p>
+					<p class="event-description-jp" lang="ja">
+						あのイーハトーヴォの
+						すきとおった風、
+						夏でも底に冷たさをもつ青いそら、
+						うつくしい森で飾られたモリーオ市、
+						郊外のぎらぎらひかる草の波。
 					</p>
 				</div>
 			
@@ -50,17 +86,24 @@
 			
 				<div class="col-md-2 entries">
 					<h3>2013</h3>
-					<h1>Nov.4</h1>
+					<h1>Oct.17</h1>
 				</div>
 				<div class="col-md-5 entries">
-					<h3>故岩村浩男氏の記念コンサートを</h3>
-					<h3>Concert one</h3>
+					<h3>セイフコフィールド：マリナーズゲームで米国国歌を歌いました</h3>
+					<h3>Concert three</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					</p>
+					<p class="event-description-jp" lang="ja">
+						あのイーハトーヴォの
+						すきとおった風、
+						夏でも底に冷たさをもつ青いそら、
+						うつくしい森で飾られたモリーオ市、
+						郊外のぎらぎらひかる草の波。
+					</p>
 				</div>
 			
-		</section>
+		</section> -->
 
 		<div class="green-seperator"></div>
 </html>

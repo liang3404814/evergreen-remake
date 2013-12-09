@@ -102,17 +102,40 @@ header {
 }
 
 .list-entry {
-	/*border: 2px solid green;*/
-	box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);
-	border-radius: 8px;
-	margin: 25px;
+	margin-bottom: 15px;
 	padding: 15px;
+	padding-top: 1px;
 }
 
-.list-entry-2-columns {
-	width: 44%;
-	height: 125px;
+.news .list-entry h3, .news .list-entry h4 {
+	margin: 2px;
+	margin-left: 12px;
+	color: white;
 }
+
+.news .list-entry .entry-header {
+	background-color: rgba(90, 166, 12, 1);
+	padding: 5px;
+	margin-bottom: 5px;
+	width: 100%;
+}
+
+.news .list-entry {
+	padding: 0px;
+	padding-bottom: 5px;
+}
+
+.news .content {
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+
+.song .entry-title {
+	border-bottom: 1px solid #BBB;
+	margin-right: 1%;
+}
+
 
 /* AngularJS Specific Animation STARTS */
 
@@ -248,6 +271,7 @@ header {
 }
 
 
+
 /*Upcoming Events*/
 
 .upcoming-event .news {
@@ -290,10 +314,12 @@ header {
 	margin:0px 0px 0px 0px;
 	background-position: 50% 0;
 	background-size: cover;
-	background-image: url(../img/witewall_3.png);
-	border-radius: 10px;
+	background-image: url(../img/satinweave.png);
+	/*border-radius: 10px;*/
 	box-shadow: 5px 5px 5px #777;
 	margin-bottom: 5px;
+	margin-right: 30px;
+	margin-left: 30px;
 }
 
 .event-title {
@@ -355,7 +381,16 @@ footer .entry .content p {
 }
 
 
+.stuck {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+	background-color: #FAFAFA;
 
+}
 
 .song-audio {
 	margin-top: 20px;
@@ -369,10 +404,28 @@ footer .entry .content p {
 
 @media (max-width: 1200px) {
 
+	.header-wrapper {
+		padding: 60px 0px 10px 0px;
+	}
+
+	.nav > li > a {
+		padding: 10px 6px;
+	}
+	.brand a {
+		font-size: 220%;
+	}
+
 }
 
 @media (max-width: 992px) {
 
+	.header-wrapper {
+		padding: 40px 0px 10px 0px;
+	}
+
+	.list-entry-2-columns {
+		
+	}
 
 }
 
