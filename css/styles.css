@@ -399,6 +399,7 @@ footer .entry .content p {
 .song-description p {
 	margin-top: 5px;
 }
+
 /*Media Queries*/
 
 
@@ -561,6 +562,15 @@ div.col-md-6.ng-scope {
 
 .mail {
 	padding-top:10px;
+}
+
+.contact-container span {
+	color: rgba(90, 166, 12, 0.7);;
+}
+
+.contact-container em {
+	text-decoration: underline;
+	font-style: normal;
 }
 
 
