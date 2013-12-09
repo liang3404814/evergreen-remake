@@ -5,8 +5,18 @@
 			</div>
 		</section>
 		<div class="green-seperator"></div>
-		<div class="column-container gallery">
-			<ul class="left-column col-md-6">
+		<div class="row">
+			<div class="column-container gallery col-md-10 col-md-offset-1" ng-controller="galleryListingControl">
+				<div class="col-md-6" ng-repeat="image in gallery.images">
+					<div class="img">
+						<a href={{image.src}}><img src={{image.src}} alt={{image.src}} width="400" height="300"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+
+			<!-- <ul class="left-column col-md-6">
 				<div class="img">
 				    <a href="tempimg/picture01.jpg"><img src="tempimg/picture01.jpg" alt="pic01" width="440" height="250"></a>
 				</div>
@@ -28,10 +38,10 @@
 				<div class="img">
 				    <a href="tempimg/picture01.jpg"><img src="tempimg/picture01.jpg" alt="pic01" width="440" height="250"></a>
 				</div>
-			</ul>
-		</div>
+			</ul> -->
+		
 
-		<div class="pagination-centered">
+		<!-- <div class="pagination-centered">
 			<ul class="pagination">
 				<li class="arrow unavailable"><a href="">&laquo;</a></li>
 				<li class="current"><a href="gallery.html">1</a></li>
@@ -43,11 +53,11 @@
 				<li><a href="">13</a></li>
 				<li class="arrow"><a href="">&raquo;</a></li>
 			</ul>
-		</div>
+		</div> -->
 
 		<div class="clear"></div>
 
 		<div class="green-seperator"></div>
 
 		
-	</div>
+	
