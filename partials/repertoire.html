@@ -42,12 +42,19 @@
 										</button>
 									</div>
 								</div>
+							</div>
 
-
-
-
-								
-
+							<div class="play-state" ng-hide="playlist.length == 0">
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" ng-style="{ width: audioPlayer.currentTime/audioPlayer.duration * 100 + '%' }">
+										<span class="sr-only">{{ audioPlayer.currentTime*100/audioPlayer.duration + '%' + ' ' + 'Played' }}</span>
+									</div>
+									<div class="time" ng-show="audioPlayer.formatTime">
+										<span>00:24</span>
+										<b>/</b>
+										<span>00:30</span>
+									</div>
+								</div>
 							</div>
 
 							<div class="audio-list"  ng-hide="playlist.length == 0">

@@ -406,6 +406,11 @@ footer .entry .content p {
 	text-align: center;
 }
 
+.progress .time {
+	position: absolute;
+	left: 50%;
+}
+
 .song-audio {
 	margin-top: 20px;
 }
