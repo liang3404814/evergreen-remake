@@ -325,6 +325,8 @@ header {
 	/*border-radius: 10px;*/
 	box-shadow: 5px 5px 5px #777;
 	margin-bottom: 5px;
+	margin-right: 40px;
+	margin-left: 40px;
 }
 
 .event-title {
