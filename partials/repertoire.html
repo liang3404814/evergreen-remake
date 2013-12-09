@@ -15,21 +15,38 @@
 
 					<div class="row">
 
-						<div class="player-wrapper col-md-offset-3 col-md-6" ui-jq="waypoint" ui-options="sticky" >
-					
-							<div class="audio-control">
+						<div class="player-wrapper col-md-offset-3 col-md-6 col-xs-8 col-xs-offset-2" ui-jq="waypoint" ui-options="sticky" >
 
-								<button ng-click="audioPlayer.playPause()" type="button" class="btn btn-default">
-									<span ng-class="{'glyphicon glyphicon-play': !audioPlayer.playing, 'glyphicon glyphicon-stop': audioPlayer.playing}"></span>
-								</button>
 
-								<button ng-click="audioPlayer.prev()" type="button" class="btn btn-default">
-									<span class="glyphicon glyphicon-fast-backward"></span> Prev
-								</button>
+							<h3 class="section-label">Music Player</h3>
 
-								<button ng-click="audioPlayer.next()" type="button" class="btn btn-default">
-									<span class="glyphicon glyphicon-fast-forward"></span> Next
-								</button>
+							<p class="prompt" ng-show="playlist.length == 0">No track in the playlist. Add some tracks to start playing.</p>
+
+							<div class="audio-control row" ng-hide="playlist.length == 0">
+
+								<div class="buttons">
+									<div class="play-button col-md-2 col-md-offset-2 col-xs-4 col-xs-offset-1">
+										<button ng-click="audioPlayer.playPause()" type="button" class="btn btn-default btn-block">
+											<span ng-class="{'glyphicon glyphicon-play': !audioPlayer.playing, 'glyphicon glyphicon-stop': audioPlayer.playing}"></span>
+										</button>
+									</div>
+									<div class="prev-button col-md-3 col-xs-3">
+										<button ng-click="audioPlayer.prev()" type="button" class="btn btn-default btn-block">
+											<span class="glyphicon glyphicon-fast-backward"></span> Prev
+										</button>
+									</div>
+
+									<div class="next-button col-md-3 col-xs-3">
+										<button ng-click="audioPlayer.next()" type="button" class="btn btn-default btn-block">
+											<span class="glyphicon glyphicon-fast-forward"></span> Next
+										</button>
+									</div>
+								</div>
+
+
+
+
+								
 
 							</div>
 
@@ -40,13 +57,19 @@
 											<th>#</th>
 											<th>Song</th>
 											<th>Description</th>
+											<th>   </th>
 										</tr>
 									</thead>
 									<tbody>
-										<tr ng-repeat="song in playlist">
+										<tr ng-repeat="song in playlist" ng-class="{active: audioPlayer.playing && audioPlayer.currentTrack-1 === $index}">
 											<td>{{$index + 1}}</td>
 											<td>{{song.title}}</td>
 											<td>{{song.description}}</td>
+											<td>
+												<button ng-click="removeSongFromListByIndex($index)" type="button" class="btn btn-default btn-xs">
+													<span class="glyphicon glyphicon-remove"></span>
+												</button>
+											</td>
 										</tr>
 									</tbody>
 								</table>
@@ -57,7 +80,7 @@
 						</div>
 
 					</div>
-					
+
 				</div>
 
 				<div class="tool search-tools row">
@@ -67,7 +90,7 @@
 						</div>
 					</div>
 					<div class="search-switches">
-						
+
 					</div>
 				</div>
 
@@ -91,7 +114,7 @@
 					</div>
 				</div>
 
-				
+
 
 			</section>
 
