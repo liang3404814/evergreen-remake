@@ -487,7 +487,8 @@ footer .entry .content p {
 }
 
 div.img {
-	padding: 6px; 
+	padding-bottom: 6px; 
+	padding-top: 6px;
 	position: relative;
 }
 
@@ -527,6 +528,12 @@ div.img:hover .mask {
 div.img:hover {
 }
 
+div.col-md-6.ng-scope {
+	margin: 6px;
+	width: 440px;
+	height: 250px;
+}
+
 .clear {
 	clear: both;
 }
@@ -538,6 +545,7 @@ div.img:hover {
 .current {
 	color: #8EC260;
 }
+
 
 
 /* Contact Us */
