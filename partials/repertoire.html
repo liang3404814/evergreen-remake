@@ -7,52 +7,55 @@
 			</section>			
 
 
-			<section class="repertoire" ng-controller="repertoireListingControl">
+			<section class="repertoire">
 
-				<div class="tool audio-player row">
-					<div class="player-wrapper col-md-offset-3 col-md-6">
+				<div class="tool audio-player">
 
-						<div class="audio-control">
+					<div class="row">
 
-							<button ng-click="audioPlayer.playPause()" type="button" class="btn btn-default">
-								<span ng-class="{'glyphicon glyphicon-play': !audioPlayer.playing, 'glyphicon glyphicon-stop': audioPlayer.playing}"></span>
-							</button>
+						<div class="player-wrapper col-md-offset-3 col-md-6" ui-jq="waypoint" ui-options="sticky" >
+					
+							<div class="audio-control">
 
-							<button ng-click="audioPlayer.prev()" type="button" class="btn btn-default">
-								<span class="glyphicon glyphicon-fast-backward"></span> Prev
-							</button>
+								<button ng-click="audioPlayer.playPause()" type="button" class="btn btn-default">
+									<span ng-class="{'glyphicon glyphicon-play': !audioPlayer.playing, 'glyphicon glyphicon-stop': audioPlayer.playing}"></span>
+								</button>
 
-							<button ng-click="audioPlayer.next()" type="button" class="btn btn-default">
-								<span class="glyphicon glyphicon-fast-forward"></span> Next
-							</button>
+								<button ng-click="audioPlayer.prev()" type="button" class="btn btn-default">
+									<span class="glyphicon glyphicon-fast-backward"></span> Prev
+								</button>
 
+								<button ng-click="audioPlayer.next()" type="button" class="btn btn-default">
+									<span class="glyphicon glyphicon-fast-forward"></span> Next
+								</button>
+
+							</div>
+
+							<div class="audio-list">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>#</th>
+											<th>Song</th>
+											<th>Description</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr ng-repeat="song in playlist">
+											<td>{{$index}}</td>
+											<td>{{song.title}}</td>
+											<td>{{song.description}}</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<audio player-control="audioPlayer" data-playlist="playlist" audio-player>
+							</audio>
 						</div>
 
-						<div class="audio-list">
-							<table class="table">
-								<thead>
-									<tr>
-										<th>#</th>
-										<th>Song</th>
-										<th>Description</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr ng-repeat="song in playlist">
-										<td>{{$index}}</td>
-										<td>{{song.title}}</td>
-										<td>{{song.description}}</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-
-
-
-
-						<audio player-control="audioPlayer" data-playlist="playlist" audio-player>
-						</audio>
 					</div>
+					
 				</div>
 
 				<div class="tool search-tools row">

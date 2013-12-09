@@ -105,7 +105,7 @@ header {
 .list-entry {
 	/*border: 2px solid green;*/
 	box-shadow: 0 2px 6px rgba(100, 100, 100, 0.5);
-	border-radius: 8px;
+	/*border-radius: 8px;*/
 	margin: 25px;
 	padding: 15px;
 	padding-top: 1px;
@@ -321,7 +321,7 @@ header {
 	background-position: 50% 0;
 	background-size: cover;
 	background-image: url(../img/witewall_3.png);
-	border-radius: 10px;
+	/*border-radius: 10px;*/
 	box-shadow: 5px 5px 5px #777;
 	margin-bottom: 5px;
 }
@@ -385,7 +385,16 @@ footer .entry .content p {
 }
 
 
+.stuck {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+	background-color: #FAFAFA;
 
+}
 
 .song-audio {
 	margin-top: 20px;
