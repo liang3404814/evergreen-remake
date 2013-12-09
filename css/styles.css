@@ -549,6 +549,10 @@ header {
 		font-size: 110%;
 	}
 
+	.upcoming-event {
+		margin-right: 0px;
+	}
+
 	.details h5 {
 		font-size: 80%;
 	}
