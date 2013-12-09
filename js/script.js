@@ -70,6 +70,17 @@ function repertoireListingControl ($scope, $routeParams, $http) {
 
 	$scope.playlist = [];
 
+	$scope.addSong = function(song) {
+		var audioElement = {};
+		audioElement.src = song.audioURL;
+		audioElement.type = 'audio/mp3';
+		audioElement.title = song.title;
+		audioElement.description = song.description;
+
+		$scope.playlist.push(audioElement);
+		console.log($scope.playlist);
+	}
+
 
 	$http.get('js/egc-repertoire.json').success(function(data) {
 		$scope.repertoire = data;

@@ -15,7 +15,7 @@
 						<div class="audio-control">
 
 							<button ng-click="audioPlayer.playPause()" type="button" class="btn btn-default">
-								<span class="glyphicon glyphicon-play"></span>
+								<span ng-class="{'glyphicon glyphicon-play': !audioPlayer.playing, 'glyphicon glyphicon-stop': audioPlayer.playing}"></span>
 							</button>
 
 							<button ng-click="audioPlayer.next()" type="button" class="btn btn-default">
@@ -25,7 +25,7 @@
 							<button ng-click="audioPlayer.prev()" type="button" class="btn btn-default">
 								<span class="glyphicon glyphicon-fast-forward"></span> Next
 							</button>
-							
+
 						</div>
 
 						<div class="audio-list">
@@ -38,10 +38,10 @@
 									</tr>
 								</thead>
 								<tbody>
-									<tr>
-										<td>asdfasdfasdf</td>
-										<td>asdfasdfasdf</td>
-										<td>asdfasdfasd</td>
+									<tr ng-repeat="song in playlist">
+										<td>{{$index}}</td>
+										<td>{{song.title}}</td>
+										<td>{{song.description}}</td>
 									</tr>
 								</tbody>
 							</table>
@@ -50,8 +50,7 @@
 
 
 
-						<audio  player-control="audio-player" data-playlist="playlist" audio-player>
-							<source src="{{song.audioURL}}" type="audio/mpeg3"></source>
+						<audio player-control="audioPlayer" data-playlist="playlist" audio-player>
 						</audio>
 					</div>
 				</div>
@@ -74,7 +73,7 @@
 								<div class=" title entry-title row">
 									<h3 class="col-md-8">{{song.title}}</h3>
 									<div class="song-audio col-md-4" ng-if="song.audioURL">
-										<button class="btn btn-default btn-primary btn-sm" ng-click="">Add to Playlist</button>
+										<button ng-click="addSong(song)" class="btn btn-default btn-primary btn-sm" ng-click="">Add to Playlist</button>
 									</div>
 								</div>
 								<div class="song-description row">
