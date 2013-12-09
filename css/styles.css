@@ -55,21 +55,30 @@ a:hover {
   	text-transform: uppercase;
 }
 
+.nav>li {
+	z-index: 9999;
+}
+
 .nav > li > a {
 	color: white;
 	padding: 10px 10px;
-	background: none;
+	background: rgba(90, 166, 12, 1);
+
 }
 
 .nav > li > a:hover {
-	color: rgb(0, 0, 0);
-	background: none;
+	background: rgba(90, 166, 12, 1);
+	color: black;
 	-o-transition: 0.3s ease-out;
   	-ms-transition: 0.3s ease-out;
   	-moz-transition: 0.3s ease-out;
   	-webkit-transition: 0.3s ease-out;
   	transition: 0.3s ease-out;
 
+}
+
+.nav > li.active > a{
+	color: black;
 }
 
 header {
@@ -83,11 +92,16 @@ header {
 	margin: 0 auto;
 }
 
+
 .brand a{
 	font-weight: lighter;
 	color: white;
 	font-size: 260%;
 	line-height: 35px;
+}
+
+.icon-bar {
+	background-color: #fff;
 }
 
 /*Shared Components*/
@@ -460,6 +474,46 @@ footer .entry .content p {
 }
 
 @media (max-width: 767px) {
+
+	.container {
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-right: auto;
+		margin-left: auto;
+		padding-top: initial;
+		padding-bottom: initial;
+		margin-top: initial;
+		margin-bottom: initial;
+		box-shadow: initial;
+	}
+
+	.nav > li > a {
+		background-color: rgba(90, 166, 12, 1);
+		padding-left: 32px;
+	}
+
+	.nav > li > a:hover {
+		color: white;
+		background-color: #3C7303;
+	}
+
+	.intro-title {
+		padding-top: 20%;
+	}
+
+	.navbar-toggle {
+		margin-top: 0px;
+	}
+
+	.navbar-collapse {
+		border-color: rgba(90, 90, 90, 0.1);
+		margin-top: 5px;
+	}
+
+	.header-wrapper {
+		padding: 20px 0px 10px 0px;
+	}
+
 	.intro-title h2 {
 		font-size: 300%;
 	}
@@ -476,6 +530,40 @@ footer .entry .content p {
 		font-size: 110%;
 	}
 }
+
+@media (max-width: 600px) {
+
+	.container {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.thick-intro {
+		height: 100%;
+	}
+
+	.intro-title {
+		padding-top: 1px;
+		
+	}
+
+	.intro-title h2 {
+		font-size: 240%;
+		margin-top: 4px;
+	}
+
+	.player-wrapper {
+		font-size: 70%;
+		width: 100%;
+		margin-left: 0px;
+	}
+
+	.audio-list {
+		font-size: 60%;
+	}
+
+}
+
 
 /*Utility*/
 

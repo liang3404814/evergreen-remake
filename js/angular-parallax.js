@@ -70,9 +70,9 @@ angular.module('angular-parallax', [
                             100);
         }
         //console.log("brightness(" + value + "%)");
-        console.log("ost: " + elem.prop('offsetTop'));
-        console.log("pageYOffset: " + $window.pageYOffset);
-        console.log("value:   " + value)
+        // console.log("ost: " + elem.prop('offsetTop'));
+        // console.log("pageYOffset: " + $window.pageYOffset);
+        // console.log("value:   " + value)
         
         elem.css('-webkit-filter', "brightness(" + value + "%)");
       }
@@ -80,6 +80,7 @@ angular.module('angular-parallax', [
       if($scope.bChangeRatio) {
         setBrightness();
         angular.element($window).bind("scroll", setBrightness);
+        angular.element($window).bind("touchmove", setBrightness);
       }
     }
   }

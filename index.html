@@ -4,24 +4,32 @@
 	<title>Evergreen Glee Club</title>
 	<link rel="stylesheet" href="css/styles.css">
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 </head>
 <body>
-	<div class="container">
+	<div class="container" ng-controller="navControl">
 		<header>
 			<div class="header-wrapper row">
 				<div class="brand col-md-5">
 					<a ui-sref="home">Evergreen Glee Club</a>
+					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse" ng-click="collapseNav = !collapseNav">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
 				</div>
-				<div class="navigation-wrapper col-md-7">
-					<nav>
-						<ul class="nav navbar-nav pull-right">
-							<li><a ui-sref="home">Home</a></li>
-							<li><a ui-sref="about">About</a></li>
-							<li><a ui-sref="news">News</a></li>
-							<li><a ui-sref="repertoire">Repertoire</a></li>
-							<li><a ui-sref="events">Events</a></li>
-							<li><a ui-sref="gallery">Gallery</a></li>
-							<li><a ui-sref="contact">Contact</a></li>
+
+				<div class="navigation-wrapper">
+					<nav class="navbar-collapse" ng-class="{'collapse': collapseNav}">
+						<ul class="nav navbar-nav">
+							<li ui-sref-active="active"><a ui-sref="home">Home</a></li>
+							<li ui-sref-active="active"><a ui-sref="about">About</a></li>
+							<li ui-sref-active="active"><a ui-sref="news">News</a></li>
+							<li ui-sref-active="active"><a ui-sref="repertoire">Repertoire</a></li>
+							<li ui-sref-active="active"><a ui-sref="events">Events</a></li>
+							<li ui-sref-active="active"><a ui-sref="gallery">Gallery</a></li>
+							<li ui-sref-active="active"><a ui-sref="contact">Contact</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -44,10 +52,10 @@
 							<p class="col-md-12">
 								Coming events, special news and updates are delivered weekly through our newsletters.
 							</p>
-							<div class="col-md-8 col-xs-8">
+							<div class="col-md-8">
 								<input type="text" class="form-control" placeholder="Type your Email address here">
 							</div>
-							<div class="col-md-4 col-xs-4">
+							<div class="col-md-4">
 								<button type="" class="btn btn-default btn-primary">Subscribe</button>
 							</div>
 						</div>

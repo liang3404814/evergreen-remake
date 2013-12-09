@@ -152,5 +152,13 @@ function galleryListingControl ($scope, $routeParams, $http) {
 }
 
 function homeControl ($scope) {
+	
+}
 
+function navControl ($scope, $location) {
+	$scope.collapseNav = true;
+
+	$scope.$on('$stateChangeSuccess', function () {
+        $scope.collapseNav = true;
+    });
 }
