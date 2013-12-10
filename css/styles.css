@@ -290,6 +290,10 @@ header {
 
 	/*Upcoming Events*/
 
+	.upcoming-event {
+		box-shadow: none;
+	}
+
 	.upcoming-event .news {
 		margin-bottom: 60px;
 	}
@@ -468,6 +472,11 @@ header {
 }
 
 @media (max-width: 992px) {
+
+	nav {
+		margin-top: 2px;
+		margin-left: -5px;
+	}
 
 	.header-wrapper {
 		padding: 40px 0px 10px 0px;
