@@ -379,12 +379,12 @@ header {
 	}
 
 	footer .entry .entry-header h4 {
-		color: rgb(223, 232, 215);
+		color: white;
 		font-weight: 600;
 	}
 
 	footer .entry .content p {
-		color: rgb(223, 232, 215);
+		color: white;
 	}
 
 	.bottom-bar {
