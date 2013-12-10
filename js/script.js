@@ -115,6 +115,10 @@ function repertoireListingControl ($scope, $routeParams, $http) {
 
 		$scope.playlist.push(audioElement);
 
+		if ($scope.playlist.length == 1) {
+			$scope.audioPlayer.play(0);
+		}
+
 		console.log($scope.playlist);
 	}
 
