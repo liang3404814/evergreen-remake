@@ -542,7 +542,7 @@ header {
 	}
 
 	.intro-title h2 {
-		font-size: 300%;
+		font-size: 400%;
 	}
 
 	.upcoming-event .title {
@@ -592,6 +592,11 @@ header {
 		padding-left: 0;
 	}
 
+	.entries {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
 	.thick-intro, .thin-intro {
 		height: 100%;
 	}
@@ -624,6 +629,11 @@ header {
 	.subscribe-submit {
 		text-align: center;
 		margin-top: 10px;
+	}
+
+	.footer-wrapper {
+		margin-left: 0;
+		margin-right: 0;
 	}
 
 }
