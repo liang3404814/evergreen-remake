@@ -490,6 +490,10 @@ header {
 
 @media (max-width: 767px) {
 
+	.header-wrapper {
+		height: 70px;
+	}
+
 	.container {
 		padding-right: 15px;
 		padding-left: 15px;
