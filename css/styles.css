@@ -587,15 +587,6 @@ header {
 	}
 	
 
-	.container {
-		padding-right: 0;
-		padding-left: 0;
-	}
-
-	.entries {
-		margin-left: 0;
-		margin-right: 0;
-	}
 
 	.thick-intro, .thin-intro {
 		height: 100%;
@@ -631,10 +622,6 @@ header {
 		margin-top: 10px;
 	}
 
-	.footer-wrapper {
-		margin-left: 0;
-		margin-right: 0;
-	}
 
 }
 
