@@ -381,7 +381,7 @@ header {
 
 	.bottom-bar {
 		background-color: rgba(51, 44, 51, 1);
-		color: rgb(223, 232, 215);
+		color: white;
 		text-align: center;
 	}
 
@@ -596,6 +596,10 @@ header {
 	.subscribe-submit {
 		text-align: center;
 		margin-top: 10px;
+	}
+
+	.bottom-bar {
+		font-size: 70%
 	}
 
 
