@@ -4,20 +4,6 @@
 
 /*Global Modification*/
 
-.egc-container {
-	padding-left: 15px;
-	padding-right: 15px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.container {
-	padding-top: 15px;
-	padding-bottom: 15px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
-}
 
 body {
 	font-size : 16px;
@@ -118,12 +104,7 @@ header {
 
 
 
-.entries {
-	padding-top: 10px;
-	padding-bottom: 40px;
-	margin-left: 15px;
-	margin-right: 15px;
-}
+
 
 .list-entry {
 	margin-bottom: 15px;
@@ -498,20 +479,15 @@ header {
 
 @media (max-width: 767px) {
 
-	.header-wrapper {
-		height: 70px;
+	.egc-container {
+		padding-top: 0px;
+		padding-bottom: 0px;
+		margin-top: 0px;
+		margin-bottom: 0px;
 	}
 
-	.container {
-		padding-right: 0px;
-		padding-left: 0px;
-		margin-right: auto;
-		margin-left: auto;
-		padding-top: initial;
-		padding-bottom: initial;
-		margin-top: initial;
-		margin-bottom: initial;
-		box-shadow: initial;
+	.header-wrapper {
+		height: 70px;
 	}
 
 	.nav > li > a {
