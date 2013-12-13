@@ -12,7 +12,7 @@
 				<div class="column-container gallery col-md-10 col-md-offset-1" ng-controller="galleryListingControl">
 					<div class="col-md-6 img-container" ng-repeat="image in gallery.images">
 						<div class="img">
-							<a href={{image.src}}><img src={{image.src}} alt={{image.src}} width="440" height="250"></a>
+							<a href="{{image.src}}"><img ng-src="{{image.src}}" alt="{{image.src}}" width="440" height="250"></a>
 							<div class="mask">
 								<p>{{image.info}}</p>
 							</div>

@@ -57,10 +57,6 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
 // 	}
 // });
 
-
-
-
-
 myApp.directive('clickableProgressbar', ['', function(){
 	
 	return {
@@ -83,8 +79,6 @@ myApp.directive('clickableProgressbar', ['', function(){
 		}
 	};
 }]);
-
-
 
 //News Loading controller
 function newsListingControl ($scope, $routeParams, $http) {
