@@ -370,6 +370,10 @@ header {
 		margin-right: 15px;
 	}
 
+	.footer-wrapper .container {
+		padding-bottom: 20px;
+	}
+
 	footer .entry .entry-header h4 {
 		color: white;
 		font-weight: 600;
