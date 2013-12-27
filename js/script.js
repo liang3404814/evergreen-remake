@@ -177,7 +177,7 @@ function homeControl ($scope) {
 function navControl ($scope, $location) {
 	$scope.collapseNav = true;
 
-	$scope.$on('$stateChangeSuccess', function () {
+	$scope.$on('$stateChangeStart', function () {
 		$scope.collapseNav = true;
 	});
 }
