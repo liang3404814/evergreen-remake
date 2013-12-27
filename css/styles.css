@@ -31,7 +31,7 @@ a:hover {
 }
 
 /* Animation for transition */
-a, h1, h2, h3, h4, h5,
+/*a, h1, h2, h3, h4, h5,
 .container, header, .thick-intro, .thin-intro {
 	-o-transition: 0.3s ease-out;
 	-ms-transition: 0.3s ease-out;
@@ -39,7 +39,7 @@ a, h1, h2, h3, h4, h5,
 	-webkit-transition: 0.3s ease-out;
 	transition: 0.3s ease-out;
 }
-
+*/
 
 /*Navigation*/
 
