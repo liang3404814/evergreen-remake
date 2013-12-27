@@ -12,13 +12,13 @@ body {
 
 a, h1, h2, h3, h4, h5 {
 	font-family : 'Source Sans Pro', 'Gill Sans', 'Gill Sans MT', "Helvetica Neue", 'Helvetica', 'Arial',
-	sans-serif;
+	Meiryo, "Hiragino Kaku Gothic Pro", Osaka, "MS P Gothic", sans-serif;
 	color : rgb(0, 0, 0);
 }
 
 p {
 	font-family : 'Source Sans Pro', 'Gill Sans', 'Gill Sans MT', "Helvetica Neue", 'Helvetica', 'Arial', 
-	sans-serif;
+	Meiryo, "Hiragino Kaku Gothic Pro", Osaka, "MS P Gothic", sans-serif;
 }
 
 a,
@@ -26,7 +26,8 @@ a:hover {
 	font-size: 100%;
 	text-decoration: none;
 	color: rgb(0, 0, 0);
-	font-family: "Maison Neue Book", Helvetica, Arial, Sans-Serif, sans-serif;
+	font-family: "Maison Neue Book", Helvetica, Arial, 
+	Meiryo, "Hiragino Kaku Gothic Pro", Osaka, "MS P Gothic", sans-serif; sans-serif;
 }
 
 /* Animation for transition */
@@ -38,6 +39,7 @@ a, h1, h2, h3, h4, h5,
 	-webkit-transition: 0.3s ease-out;
 	transition: 0.3s ease-out;
 }
+
 
 /*Navigation*/
 
@@ -673,7 +675,8 @@ div.img:hover .mask {
 	color: #FFF;
 	opacity: 1;
 	transition: all 0.2s linear;
-	font-family : 'Source Sans Pro', 'Gill Sans', 'Gill Sans MT', "Helvetica Neue", 'Helvetica', 'Arial';
+	font-family : 'Source Sans Pro', 'Gill Sans', 'Gill Sans MT', "Helvetica Neue", 'Helvetica', 'Arial',
+	Meiryo, "Hiragino Kaku Gothic Pro", Osaka, "MS P Gothic", sans-serif;;
 	text-align: left;
 	font-size: 200%;
 	padding-left: 10px;

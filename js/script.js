@@ -3,7 +3,11 @@ var myApp = /**
 *
 * Overarching module for the EGC website
 */
-angular.module('egc', [ 'ngAnimate', 'ui.router', 'ui', 'ngRoute', 'audioPlayer', 'angular-parallax']);
+angular.module('egc', [ 'ngAnimate', 'ui.router', 'ui', 'ngRoute', 'audioPlayer', 'angular-parallax', 'ngProgressLite']);
+
+myApp.config(['ngProgressLiteProvider', function (ngProgressLiteProvider) {
+			ngProgressLiteProvider.settings.ease = 'ease-in';
+					}]);
 
 // Routing Settings
 myApp.config(function($stateProvider, $urlRouterProvider) {
@@ -43,7 +47,22 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
 		url: "/contact",
 		templateUrl: "partials/contact.html"
 	})
+
+
 });
+
+myApp.run(function($rootScope, ngProgressLite, $timeout) {
+	$rootScope.$on('$stateChangeStart', function() {
+		ngProgressLite.start();
+		ngProgressLite.set(0.4);
+	})
+
+	$rootScope.$on('$stateChangeSuccess', function() {
+		ngProgressLite.done();
+	})
+});
+
+
 
 // Setting up mediaelement player directive
 // myApp.directive('mediaelement', function() {
@@ -80,6 +99,8 @@ myApp.directive('clickableProgressbar', ['', function(){
 	};
 }]);
 
+
+
 //News Loading controller
 function newsListingControl ($scope, $routeParams, $http) {
 	$http.get('js/egc-news.json')
@@ -89,7 +110,6 @@ function newsListingControl ($scope, $routeParams, $http) {
 }
 
 function repertoireListingControl ($scope, $routeParams, $http) {
-	// $scope.player = AudioService;
 
 	// for sticky waypoints parameter evaluation
 	$scope.sticky = 
@@ -113,7 +133,7 @@ function repertoireListingControl ($scope, $routeParams, $http) {
 			$scope.audioPlayer.play(0);
 		}
 
-		console.log($scope.playlist);
+		// console.log($scope.playlist);
 	}
 
 	$scope.removeSongFromListByIndex = function(index) {
@@ -127,7 +147,7 @@ function repertoireListingControl ($scope, $routeParams, $http) {
 		$scope.audioPlayer.pause();
 
 		$scope.playlist.splice(index, 1);
-		console.log($scope.playlist);
+		// console.log($scope.playlist);
 	}
 
 
@@ -158,6 +178,6 @@ function navControl ($scope, $location) {
 	$scope.collapseNav = true;
 
 	$scope.$on('$stateChangeSuccess', function () {
-        $scope.collapseNav = true;
-    });
+		$scope.collapseNav = true;
+	});
 }
