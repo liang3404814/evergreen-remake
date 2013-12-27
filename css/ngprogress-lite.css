@@ -3,7 +3,7 @@
 }
 
 .ngProgressLiteBar {
-	background: #2D5C02;
+	background: #FFF;
 	position: fixed;
 	z-index: 100;
 	top: 0;
@@ -18,6 +18,6 @@
 	right: 0px;
 	width: 10px;
 	height: 100%;
-	box-shadow: 0 0 10px #2D5C02, 0 0 5px #2D5C02;
+	box-shadow: 0 0 10px #FFF, 0 0 5px #FFF;
 	opacity: 1;
 }
