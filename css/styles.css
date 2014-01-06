@@ -305,12 +305,6 @@ header {
 	padding-top: 20px;
 }
 
-.about-border {
-	border-left: solid 5px;
-	line-height: 20px;
-	padding-left: 5px; 
-}
-
 .about-footer {
 	color: rgb(223, 232, 215);
 }
