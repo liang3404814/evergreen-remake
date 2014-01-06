@@ -162,9 +162,18 @@ function homeControl ($scope) {
 }
 
 function navControl ($scope, $location) {
-	$scope.collapseNav = true;
+	$scope.collapsedNav = true;
 
 	$scope.$on('$stateChangeStart', function () {
-		$scope.collapseNav = true;
+		$scope.collapseNav();
 	});
+
+	$scope.collapseNav = function() {
+		$scope.collapsedNav = true;
+	}
+
+	$scope.toggleNav = function() {
+		$scope.collapsedNav = !$scope.collapsedNav;
+	}
+
 }
