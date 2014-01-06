@@ -55,6 +55,7 @@ myApp.run(function($rootScope, ngProgressLite, $timeout) {
 	$rootScope.$on('$stateChangeStart', function() {
 		ngProgressLite.start();
 		ngProgressLite.set(0.4);
+		
 	})
 
 	$rootScope.$on('$stateChangeSuccess', function() {
